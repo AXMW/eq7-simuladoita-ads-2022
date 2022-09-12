@@ -1,3 +1,88 @@
+Q15_AA_ITA_2022 (A) 21 km2
+Q15_AB_ITA_2022 (B) 320 km2
+Q15_AC_ITA_2022 (C) 4.800 km2
+Q15_AD_ITA_2022 (D) 52.000 km2
+Q15_AE_ITA_2022 (E) 680.000 km2
+
+Q16_AA_ITA_2022 (A) o respeito distanciado, porém, genuíno, que as classes populares da época nutriam para com os políticos.
+Q16_AB_ITA_2022 (B) a idolatria do autor para com os políticos que defendiam a volta do regime monárquico.
+Q16_AC_ITA_2022 (C) a ironia com que a narrativa retrata a política institucional da República Velha.
+Q16_AD_ITA_2022 (D) a crença do narrador de que os males da política tinham origem nas intrigas das cortes europeias.
+Q16_AE_ITA_2022 (E) o tom de desesperança para com o futuro do Brasil manifestado na psicologia das personagens femininas.
+
+Q17_AA_ITA_2022 (A) são o espelho da boa educação aristocrática que também caracteriza a dupla Edgarda e D. Florinda.
+Q17_AB_ITA_2022 (B) representam a dignidade de caráter do povo brasileiro, como Bogóloff e Juca Chaveco.
+Q17_AC_ITA_2022 (C) são personagens secundárias, cuja única função é auxiliar as personagens verdadeiramente centrais da narrativa.
+Q17_AD_ITA_2022 (D) são protagonistas porque contribuem decisivamente para o sucesso das carreiras políticas de Bentes e Benevenuto.
+Q17_AE_ITA_2022 (E) representam ao leitor que o oportunismo e a ação por mera conveniência estão presentes em todas as classes sociais brasileiras.
+
+Q18_AA_ITA_2022 (A) é um narrador onisciente, que julga crítica e sarcasticamente os fatos e as personagens.  	
+Q18_AB_ITA_2022 (B) é um narrador personagem, imparcial, em 3ª pessoa.
+Q18_AC_ITA_2022 (C) é um narrador em 3ª pessoa, imparcial ao narrar os fatos, mas que julga criticamente as personagens.
+Q18_AD_ITA_2022 (D) é um narrador onisciente, em 1ª pessoa, que julga moralmente as demais personagens.
+Q18_AE_ITA_2022 (E) é um narrador onisciente, distanciado dos fatos e das personagens.
+
+Q19_AA_ITA_2022 (A) apenas I é verdadeira
+Q19_AB_ITA_2022 (B) apenas II é verdadeira.
+Q19_AC_ITA_2022 (C) apenas I e II são falsas.
+Q19_AD_ITA_2022 (D) apenas III é falsa.
+Q19_AE_ITA_2022 (E) todas são falsas.
+
+Q20_AA_ITA_2022 (A) a observação de fatos cotidianos aproxima-se da crônica e permite ao narrador relatar algo que o senso comum não percebe imediatamente.
+Q20_AB_ITA_2022 (B) pelo relato dos fatos cotidianos, o narrador revela que, por trás das aparências, há uma recusa da cultura popular implícita na adesão à estrangeira.
+Q20_AC_ITA_2022 (C) o narrador manifesta sutilmente um juízo acerca do que se passa.
+Q20_AD_ITA_2022 (D) o relato e a interpretação do fato cotidiano facultam ao leitor formular seus próprios juízos sobre o que se passa.
+Q20_AE_ITA_2022 (E) é um relato estritamente objetivo que não busca manifestar nenhuma perspectiva subjetiva ou aspecto despercebido do cotidiano.
+
+Q21_AA_ITA_2022 (A) os verbos, advérbios e complementos representam uma situação perigosa para quem bebe pouco leite.
+Q21_AB_ITA_2022 (B) a construção repetitiva dos versos sugere uma tensão entre as condições de vida, a repetição própria do trabalho moderno e uma moralidade social violenta.
+Q21_AC_ITA_2022 (C) o estilo coloquial do poema está em perfeita consonância com os preceitos da poética romântica do autor.
+Q21_AD_ITA_2022 (D) os versos tematizam a luta no campo entre grandes e pequenos pecuaristas dedicados à produção de laticínios no país. 
+Q21_AE_ITA_2022 (E) a escassez de recursos linguísticos é uma metáfora da escassez de recursos na produção social de laticínios no país.
+
+Q22_AA_ITA_2022 (A) “Eta vida besta, meu Deus.” (“Cidadezinha qualquer”).
+Q22_AB_ITA_2022 (B) “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”).
+Q22_AC_ITA_2022 (C) “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”).
+Q22_AD_ITA_2022 (D) “E como ficou chato ser moderno./ Agora serei eterno.” (“Eterno”).
+Q22_AE_ITA_2022 (E) “Então nos punimos em nossa delícia./ O amor atinge raso, e fere tanto.” (“Ciclo”).
+
+Q23_AA_ITA_2022 (A) o poeta quer dizer que a divisão é rígida e espelha fielmente as fases de sua obra.
+Q23_AB_ITA_2022 (B) o poeta admite, com ironia, a própria falibilidade e faculta ao leitor a liberdade de outra organização dos poemas.
+Q23_AC_ITA_2022 (C) a Antologia poética deve ser entendida normativamente, isto é, segundo uma “ordem interna” inalterável
+Q23_AD_ITA_2022 (D) o poeta retira do leitor a possibilidade de interpretar a sua poesia.
+Q23_AE_ITA_2022 (E) é evidente a falta de critério para a seleção dos poemas, o que indica apenas a intenção de amostragem, sem qualquer planejamento ou organização.
+
+Q24_AA_ITA_2022 (A) a sua poética mantém uma relação ambígua com a memória, com traços de esperança, embora sem saudosismo ou idealização, como atestam os versos: “Pois de tudo fica um pouco./ Fica um pouco de teu queixo/ no queixo de tua filha.” (“Resíduo”).
+Q24_AB_ITA_2022 (B) não é sua característica tratar do amor como luxúria carnal que intensifica a dor de amar, conforme atestam os versos: “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”).
+Q24_AC_ITA_2022 (C) não é marcada por terna evocação saudosista do passado, como atestam os versos: “E de tudo fica um pouco./ Oh abre os vidros de loção/ e abafa/ o insuportável mau cheiro da memória.” (“Resíduo”).
+Q24_AD_ITA_2022 (D) o poeta jamais demonstra dúvidas relativamente ao amor, conforme atestam os versos: “Amarei mesmo Fulana?/ ou é ilusão de sexo?” (“O mito”).
+Q24_AE_ITA_2022 (E) o poeta não evita o tema da memória e só trata da expectativa do futuro, como atestam os versos: “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”).
+
+Q25_AA_ITA_2022 (A) os versos evidenciam que o amor, na poética de Drummond, não representa um tema importante e é apenas ligeiramente abordado em seus poemas.
+Q25_AB_ITA_2022 (B) os versos evidenciam a centralidade do amor erótico na poética de Drummond, por meio do qual a subjetividade individual se exprime.
+Q25_AC_ITA_2022 (C) os versos evidenciam que, na poética de Drummond, o amor vai além do sentimentalismo individual para englobar relações humanas mais profundas. 
+Q25_AD_ITA_2022 (D) nestes versos, o poeta reduz o amor ao ato sexual, ao desejo carnal entre homem e mulher.
+Q25_AE_ITA_2022 (E) nestes versos, o amor restringe-se a um sentimentalismo convencional, evidenciado pela escolha da forma tradicional do soneto para exprimir o tema.
+
+Q26_AA_ITA_2022 (A) é um narrador predominantemente em terceira pessoa, que utiliza, por vezes, o discurso indireto livre para se confundir com a personagem protagonista.
+Q26_AB_ITA_2022 (B) é um narrador em primeira pessoa que constrói um monólogo interior.
+Q26_AC_ITA_2022 (C) é um narrador protagonista, que relata, em primeira pessoa, as experiências que outra personagem lhe contou.
+Q26_AD_ITA_2022 (D) é um narrador em terceira pessoa pouco atento aos pensamentos da personagem protagonista.
+Q26_AE_ITA_2022 (E) é um narrador judicativo que recrimina a culpa que a personagem protagonista sente e, por isso, faz perguntas a si próprio.
+
+Q27_AA_ITA_2022 (A) “Se por acaso alguém tinha pensado em comprar um novo fio dental porque este estava no fim. Não está, respondi, é que ele se enredou lá dentro, se a gente tirar esta plaqueta (tentei levantar a plaqueta) a gente vê que o rolo está inteiro mas enredado e quando o fio se enreda desse jeito, nunca mais!, melhor jogar fora e começar outro rolo. Não joguei.” (“Noturno amarelo”). 
+Q27_AB_ITA_2022 (B) “Chega também de banho? ela perguntou enquanto dava tapinhas no queixo. Ele calçou os chinelos: se não estivesse tão cansado, poderia odiá-la.” (“A mão no ombro”).
+Q27_AC_ITA_2022 (C) “Acho que você nunca amou ninguém a não ser você mesmo, ela disse apertando as palmas das mãos contra os olhos. Amei você — quis dizer e não tive forças.” (“A sauna”).
+Q27_AD_ITA_2022 (D) “Fiz minha cara inocente: na véspera, ele me advertira que eu podia ser uma moça de mãos feias, ‘Ainda não pensou nisso?’. Nunca tinha pensado antes, nunca me importei com as mãos, mas no instante em que ele fez a pergunta comecei a me importar.” (“Herbarium”).
+Q27_AE_ITA_2022 (E) “E achei que seria a oportunidade de me livrar dele, a troca era vantajosa, mas calculei mal, logo nos primeiros encontros descobri que a traição faz apodrecer o amor. Na rua, no restaurante, no cinema, na cama e em toda parte, Eduarda, você esteve presente.” (“Noturno amarelo”)
+
+Q28_AA_ITA_2022 (A) a visita de Laura, protagonista do conto, à antiga casa de sua família, aconteceu realmente, mas isso não a afeta em nada.
+Q28_AB_ITA_2022 (B) a visita de Laura à antiga casa de sua família só aconteceu na sua imaginação, o que revela a futilidade da personagem.
+Q28_AC_ITA_2022 (C) por nunca ter nutrido sentimentos de amor por sua família, Laura decide voltar no meio do caminho e cancelar a visita.
+Q28_AD_ITA_2022 (D) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que as suas memórias a levam a passar a sua vida a limpo.
+Q28_AE_ITA_2022 (E) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que nenhuma lembrança é capaz de alterar a sua falsidade e dissimulação em relação ao passado.
+
+
 Q29_AA_ITA_2022 A ( ) o conto narra um caso de sedução de um adulto por uma menor, como atesta o trecho: “Herbarium,
 ensinou-me logo no primeiro dia em que chegou ao sítio. Fiquei repetindo a palavra, herbarium. Herbarium.”
 Q29_AB_ITA_2022 B ( ) o conto narra o ingresso da protagonista na adolescência, marcado pela sedução de um seu primo adulto, como atesta o trecho: “Ele selecionava as folhas ainda pesadas de orvalho quando me perguntou se já tinha ouvido falar em folha persistente.” 
