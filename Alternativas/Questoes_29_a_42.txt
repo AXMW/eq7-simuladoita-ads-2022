@@ -1,3 +1,87 @@
+Q1_AA_ITA_2022 (A) 2
+Q1_AB_ITA_2022 (B) 5
+Q1_AC_ITA_2022 (C) 8
+Q1_AD_ITA_2022 (D) 10
+Q1_AE_ITA_2022 (E) 13
+
+Q2_AA_ITA_2022 (A) 0 
+Q2_AB_ITA_2022 (B) 1 
+Q2_AC_ITA_2022 (C) 5 
+Q2_AD_ITA_2022 (D) 11
+Q2_AE_ITA_2022 (E) 13
+
+Q3_AA_ITA_2022 (A) P L/Ph
+Q3_AB_ITA_2022 (B) PhL/P
+Q3_AC_ITA_2022 (C) P L/Ph
+Q3_AD_ITA_2022 (D) 2P L/Ph
+Q3_AE_ITA_2022 (E) 3P L/Ph
+
+Q4_AA_ITA_2022 (A) imagem
+Q4_AB_ITA_2022 (B) imagem
+Q4_AC_ITA_2022 (C) imagem
+Q4_AD_ITA_2022 (D) imagem
+Q4_AE_ITA_2022 (E) imagem
+
+Q5_AA_ITA_2022 (A) imagem
+Q5_AB_ITA_2022 (B) imagem
+Q5_AC_ITA_2022 (C) imagem
+Q5_AD_ITA_2022 (D) imagem
+Q5_AE_ITA_2022 (E) imagem
+
+Q6_AA_ITA_2022 (A) imagem
+Q6_AB_ITA_2022 (B) imagem
+Q6_AC_ITA_2022 (C) imagem
+Q6_AD_ITA_2022 (D) imagem
+Q6_AE_ITA_2022 (E) imagem
+
+Q7_AA_ITA_2022 (A) imagem
+Q7_AB_ITA_2022 (B) imagem
+Q7_AC_ITA_2022 (C) imagem
+Q7_AD_ITA_2022 (D) imagem
+Q7_AE_ITA_2022 (E) imagem
+
+Q8_AA_ITA_2022 (A) 30◦C ≤ T ≤ 80 ◦C
+Q8_AB_ITA_2022 (B) 80◦C ≤ T ≤ 130 ◦C
+Q8_AC_ITA_2022 (C) 130◦C ≤ T ≤ 180 ◦C
+Q8_AD_ITA_2022 (D) 180◦C ≤ T ≤ 230 ◦C
+Q8_AE_ITA_2022 (E) 230◦C ≤ T ≤ 280 ◦C
+
+Q9_AA_ITA_2022 (A) As sentenças I, II e III são falsas.
+Q9_AB_ITA_2022 (B) Apenas a sentença I é verdadeira.
+Q9_AC_ITA_2022 (C) Apenas a sentença II é verdadeira.
+Q9_AD_ITA_2022 (D) Apenas a sentença III é verdadeira.
+Q9_AE_ITA_2022 (E) Apenas as sentenças I e II são verdadeiras.
+
+Q10_AA_ITA_2022 (A) 0 cm ≤ x ≤ 2,67 cm
+Q10_AB_ITA_2022 (B) 3 cm ≤ x ≤ 6 cm
+Q10_AC_ITA_2022 (C) 3 cm ≤ x ≤ 8 cm
+Q10_AD_ITA_2022 (D) 5 cm ≤ x ≤ 8 cm
+Q10_AE_ITA_2022 (E) 6 cm ≤ x ≤ 8 cm
+
+Q11_AA_ITA_2022 (A) 1,2 mm
+Q11_AB_ITA_2022 (B) 1,5 mm
+Q11_AC_ITA_2022 (C) 6,0 mm
+Q11_AD_ITA_2022 (D) 9,0 mm
+Q11_AE_ITA_2022 (E) Não é possível observar uma franja verde a partir desse arranjo experimental.
+
+Q12_AA_ITA_2022 (A) 0,33 s
+Q12_AB_ITA_2022 (B) 0,66 s
+Q12_AC_ITA_2022 (C) 1,00 s
+Q12_AD_ITA_2022 (D) 1,33 s
+Q12_AE_ITA_2022 (E) 1,66 s
+
+Q13_AA_ITA_2022 (A) C
+Q13_AB_ITA_2022 (B) 2 C
+Q13_AC_ITA_2022 (C) 3 C
+Q13_AD_ITA_2022 (D) 8 C/3
+Q13_AE_ITA_2022 (E) 8 C
+
+Q14_AA_ITA_2022 (A) imagem
+Q14_AB_ITA_2022 (B) imagem
+Q14_AC_ITA_2022 (C) imagem
+Q14_AD_ITA_2022 (D) imagem
+Q14_AE_ITA_2022 (E) imagem
+
 Q15_AA_ITA_2022 (A) 21 km2
 Q15_AB_ITA_2022 (B) 320 km2
 Q15_AC_ITA_2022 (C) 4.800 km2
