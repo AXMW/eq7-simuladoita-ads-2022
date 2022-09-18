@@ -1,0 +1,44 @@
+/* Add a black background color to the top navigation */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+.container {
+  //padding: 0 10%;
+  font-family: Lato;
+  background-color: #161b22;
+  overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.container a {
+  //float: left;
+  color: #f2f2f2;
+  text-align: center;
+  
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.ita-logo a {
+  padding: 0 10%;
+  display: flex;
+  float: left;
+}
+
+.menu-section {
+  padding: 0 10%;
+  display: flex;  
+  //margin-top: 30px;
+  height: 76px;
+  float: right;
+}
+  
+  /* Change the color of links on hover */
+.container a:hover {
+  background-color: #1d2a35;
+  color: white;
+}
+  
+  /* Add a color to the active/current link */
+.container a.active {
+  background-color: #04AA6D;
+  color: white;
+}
