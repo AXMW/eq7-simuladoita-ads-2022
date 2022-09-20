@@ -1,66 +1,19 @@
-//importando a fonte lato
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
 * {
     box-sizing: border-box; 
-    margin: 0; /* Definindo uma margem geral. */
-    padding: 0; /* Definindo um padding geral. */
-    outline: 0; /* Contorno da linha. */
+    margin: 0; 
+    padding: 0;
+    outline: 0;
 }
 
 body {
     height: 100vh;
     background-color: #15222c;
-    font-family: Lato;
+    font-family: Noto Sans;
     color: white;
     text-rendering: optimizelegibility; 
     -webkit-font-smoothing: antialiased;
-}
-
-.question-space{
-    padding: 0 15%;
-}
-
-.navigation-reducted button {
-    color: white;
-    border-color: white;
-    background: none;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 500ms;
-
-    
-}
-
-.navigation-reducted button:hover {
-    background-color: gray;
-    cursor: pointer;
-}
-
-.button-end-correct {
-    color: white;
-    border-color: white;
-    background: none;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    border-radius: 5px;
-    transition: background-color 500ms;
-}
-
-.button-end-correct:hover {
-    background-color: gray;
-    cursor: pointer;
-}
-
-.alternatives {
-    padding: 14px 16px;
-}
-
-.alternatives input {
-    margin: 10px 0;
 }
 
 .footer {
