@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
 /* Style the tab */
 .tab {
@@ -7,7 +7,7 @@
   justify-content: center;
   position: relative;
 
-  font-family: Lato;
+  font-family: Noto Sans;
   overflow: hidden;
   border: none;
   background-color: #1d2a35;
@@ -15,7 +15,7 @@
     
   /* Style the buttons that are used to open the tab content */
 .tab button {
-  font-family: Lato;
+  font-family: Noto Sans;
   color: white;
   background-color: inherit;
   border: none;

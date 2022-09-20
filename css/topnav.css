@@ -1,8 +1,8 @@
 /* Add a black background color to the top navigation */
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 .container {
   //padding: 0 10%;
-  font-family: Lato;
+  font-family: Noto Sans;
   background-color: #161b22;
   overflow: hidden;
 }
