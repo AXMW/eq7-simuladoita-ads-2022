@@ -16,6 +16,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+body a {
+    color: white;
+}
+
 .footer {
     background-color: #161b22;
 
