@@ -1,6 +1,39 @@
 
-.question-space{
-    padding: 0 15%;
+.question-space {
+    padding: 0 20%;
+}
+
+.phisics-help {
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.chemistry-help {
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.math-help {
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.reference {
+    color: gray;
+}
+
+.reference a {
+    color: gray;
+}
+
+.question-text {
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.question-order {
+    margin-top: 10px;
+    padding: 1%;
 }
 
 .navigation-reducted button {
