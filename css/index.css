@@ -1,0 +1,48 @@
+.corpo-index{
+    text-align: justify;
+    padding: 0 15%;
+}
+
+.introducao-ita{
+    text-align: center;
+}
+
+.fonte-sobre-ita{
+    font-size: 80%;
+}
+
+.acesso-simulado{
+    text-align: center;
+}
+
+.acesso-prova-gabarito{
+    text-align: center;
+}
+
+.button-nav{
+    color: #15222c;
+    background: none;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;  
+    border-radius: 5px;
+    border-color: #15222c;
+    background-color: rgb(206, 187, 19);
+    cursor: pointer;
+}
+
+.sobre-site{
+    text-align: justify;
+}
+
+.titulo-sobre{
+    text-align: center;
+}
+
+.responsaveis-site{
+    text-align: center;
+}
+
+.creditos-site{
+    text-align: center;
+}
