@@ -3,7 +3,7 @@
     padding: 0 15%;
 }
 
-.introducao-ita{
+.introducao-ita{ 
     text-align: center;
 }
 
@@ -19,10 +19,22 @@
     text-align: center;
 }
 
-.button-nav{
+.button-simulado{
+    width: 150px;
     color: #15222c;
     background: none;
-    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;  
+    border-radius: 5px;
+    border-color: #15222c;
+    background-color: rgb(206, 187, 19);
+    cursor: pointer;
+}
+
+.button-nav{
+    width: 108px;
+    color: #15222c;
+    background: none;
     margin: 0.5em;
     padding: 1em 2em;  
     border-radius: 5px;
