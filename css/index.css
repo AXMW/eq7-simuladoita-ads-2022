@@ -1,22 +1,15 @@
 .corpo-index{
-    text-align: justify;
+    text-align: center;
     padding: 0 15%;
 }
 
-.introducao-ita{ 
-    text-align: center;
+.sobre-ita{
+    text-align: justify;
 }
+
 
 .fonte-sobre-ita{
     font-size: 80%;
-}
-
-.acesso-simulado{
-    text-align: center;
-}
-
-.acesso-prova-gabarito{
-    text-align: center;
 }
 
 .button-simulado{
@@ -47,14 +40,4 @@
     text-align: justify;
 }
 
-.titulo-sobre{
-    text-align: center;
-}
 
-.responsaveis-site{
-    text-align: center;
-}
-
-.creditos-site{
-    text-align: center;
-}
