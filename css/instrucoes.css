@@ -1,0 +1,25 @@
+.corpo-instrucoes{
+    text-align: justify;
+    padding: 3%;
+}
+
+.titulo-instrucoes{
+    text-align: center;
+}
+
+.instrucoes-finais{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.button-nav{
+    width: 150px;
+    color: #15222c;
+    background: none;
+    margin: 0.5em;
+    padding: 1em 2em;  
+    border-radius: 5px;
+    border-color: #15222c;
+    background-color: rgb(206, 187, 19);
+    cursor: pointer;
+}
