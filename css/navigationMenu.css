@@ -37,6 +37,7 @@
     
   /* Style the tab content */
 .tabcontent {
+  text-align: center;
   color: white;
   background-color: #1d2a35;
   display: none; 
