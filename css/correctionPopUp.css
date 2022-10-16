@@ -1,0 +1,76 @@
+.correct-pop-up {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.incorrect {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #161b22;
+    border: none;
+    position: relative;
+    margin: auto;
+    position: fixed;
+    display: none;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.incorrect p {
+    margin-top: 13px;
+}
+
+.correct p {
+    margin-top: 13px;
+}
+
+.correct {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #161b22;
+    border: none;
+    position: relative;
+    margin: auto;
+    position: fixed;
+    display: none;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.alert {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #161b22;
+    border: none;
+    position: relative;
+    margin: auto;
+    position: fixed;
+    display: none;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.alert h3{
+    margin-top: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.close:hover {color: red;}
