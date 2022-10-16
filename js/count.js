@@ -1,8 +1,10 @@
 let pageId = ''
 let answeredQuestion = ''
 
+//Armazenando o ID da pag
 pageId = document.querySelector('body').id
 
+//verifica a alternativa selecionada
 function radioSelected(){
 
     for(item of document.querySelectorAll(`Input[Name=${pageId}]`)) {
@@ -18,7 +20,7 @@ addEventListener('load', () => {
     if(sessionStorage.getItem('userAnswers')) {
         answeredQuestion = sessionStorage.getItem('userAnswers')
         for(perguntaR of answeredQuestion.split("")) {
-            if(perguntaR.split(":")[0] == idPagina)
+            if(perguntaR.split(":")[0] == pageId)
                 document.querySelector(`Input[Value=${perguntaR.split(":"[1])}]`).checked = true;
         }
     }
