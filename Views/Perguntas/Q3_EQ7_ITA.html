@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q3">
@@ -178,19 +179,19 @@
           <!--alternativas-->
           <div class="alternatives">
             <span>
-              <input type="radio" name="question-3" value="A"> A) PL/P<sub>h</sub>
+              <input type="radio" name="Q3" value="A"> A) PL/P<sub>h</sub>
             </span><br>
             <span>
-              <input type="radio" name="question-3" value="B"> B) P<sub>h</sub>L/P
+              <input type="radio" name="Q3" value="B"> B) P<sub>h</sub>L/P
             </span><br>
             <span>
-              <input type="radio" name="question-3" value="C"> C) PL/P<sub>h</sub>
+              <input type="radio" name="Q3" value="C"> C) PL/P<sub>h</sub>
             </span><br>
             <span>
-              <input type="radio" name="question-3" value="D"> D) 2PL/P<sub>h</sub>
+              <input type="radio" name="Q3" value="D"> D) 2PL/P<sub>h</sub>
             </span><br>
             <span>
-              <input type="radio" name="question-3" value="E"> E) 3PL/P<sub>h</sub>
+              <input type="radio" name="Q3" value="E"> E) 3PL/P<sub>h</sub>
             </span><br>
           </div>
           <!--botões ultima, proxima e questões depois-->
@@ -206,8 +207,8 @@
           
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onClick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onClick="verifyAnswer()">
             </div>
 
           
@@ -240,5 +241,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q2">
@@ -38,16 +39,16 @@
         <div class="navigation">
           <!-- Tab links -->
           <div class="tab">
-            <button class="tablinks" onclick="openSubject(event, 'fisica')">Física</button>
-            <button class="tablinks" onclick="openSubject(event, 'portugues')">Português</button>
-            <button class="tablinks" onclick="openSubject(event, 'ingles')">inglês</button>
-            <button class="tablinks" onclick="openSubject(event, 'matematica')">Matemática</button>
-            <button class="tablinks" onclick="openSubject(event, 'quimica')">Química</button>
+            <button class="tablinks" onClick="openSubject(event, 'fisica')">Física</button>
+            <button class="tablinks" onClick="openSubject(event, 'portugues')">Português</button>
+            <button class="tablinks" onClick="openSubject(event, 'ingles')">inglês</button>
+            <button class="tablinks" onClick="openSubject(event, 'matematica')">Matemática</button>
+            <button class="tablinks" onClick="openSubject(event, 'quimica')">Química</button>
           </div>
 
           <!-- Tab content -->
             <div id="fisica" class="tabcontent">
-              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <span onClick="this.parentElement.style.display='none'" class="topright">&times</span>
               <a href="Q1_EQ7_ITA.html"><button>01</button></a>
               <a href="Q2_EQ7_ITA.html"><button>02</button></a>
               <a href="Q3_EQ7_ITA.html"><button>03</button></a>
@@ -66,7 +67,7 @@
             </div>
           
             <div id="portugues" class="tabcontent">
-              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <span onClick="this.parentElement.style.display='none'" class="topright">&times</span>
               <a href="Q16_EQ7_ITA.html"><button>16</button></a>
               <a href="Q17_EQ7_ITA.html"><button>17</button></a>
               <a href="Q18_EQ7_ITA.html"><button>18</button></a>
@@ -85,7 +86,7 @@
             </div>
           
             <div id="ingles" class="tabcontent">
-              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <span onClick="this.parentElement.style.display='none'" class="topright">&times</span>
               <a href="Q31_EQ7_ITA.html"><button>31</button></a>
               <a href="Q32_EQ7_ITA.html"><button>32</button></a>
               <a href="Q33_EQ7_ITA.html"><button>33</button></a>
@@ -99,7 +100,7 @@
             </div>
           
             <div id="matematica" class="tabcontent">
-              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <span onClick="this.parentElement.style.display='none'" class="topright">&times</span>
               <a href="Q41_EQ7_ITA.html"><button>41</button></a>
               <a href="Q42_EQ7_ITA.html"><button>42</button></a>
               <a href="Q43_EQ7_ITA.html"><button>43</button></a>
@@ -118,7 +119,7 @@
             </div>
           
             <div id="quimica" class="tabcontent">
-              <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+              <span onClick="this.parentElement.style.display='none'" class="topright">&times</span>
               <a href="Q56_EQ7_ITA.html"><button>56</button></a>
               <a href="Q57_EQ7_ITA.html"><button>57</button></a>
               <a href="Q58_EQ7_ITA.html"><button>58</button></a>
@@ -184,7 +185,7 @@
               <input type="radio" name="question-2" value="D"> D) 11
             </span><br>
             <span>
-              <input type="radio" name="question-2" value="E"> E) 13
+              <input type="radio" name="question-2" value="E" id="correct-alt"> E) 13
             </span><br>
           </div>
           <!--botões ultima, proxima e questões depois-->
@@ -200,8 +201,8 @@
           
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onClick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onClick="verifyAnswer()">
             </div>
           
         </div>
@@ -233,5 +234,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>
