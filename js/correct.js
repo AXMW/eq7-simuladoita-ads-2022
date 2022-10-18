@@ -3,55 +3,59 @@ var altText = ''
 var correctedPags = ''
 var index = 0
 var selected = ''
+var verify
 
-constructAlert()
-constructIncorrect()
-constructCorrect()
+verifyAnulated()
 
 window.addEventListener('load', () => {
     //verifyCorrectedPage()
-    correctAlternative = document.getElementById('correct-alt').value
+       
 })
 
 function verifyAnswer() {
-    //verifyCorrectedPage()
-
-    if(selectedAlternative() == 'none'){
-        openAlert()
+    if(verify == 1){
+        openAnulatedQuestion()
+        disableInputRadio()
     }
     else{
-        selectedAltContent(selectedAlternative())
-
-        if(selectedAlternative() === correctAlternative){
-            openCorrect()
+        //verifyCorrectedPage()
+        if(selectedAlternative() == 'none'){
+            openAlert()
         }
+        else{
+            selectedAltContent(selectedAlternative())
+
+            if(selectedAlternative() === correctAlternative){
+                openCorrect()
+            }
+            else{
+                openIncorrect()
+            }
             
-        if(selectedAlternative() != correctAlternative){
-            openIncorrect()
-        }
-        
-        //disableInputRadio()
+            //disableInputRadio()
 
-        let cycles = 0
+            let cycles = 0
 
-        for(correctedPags of correctedPags.split(" ")){
-            if(correctedPags == pageId){
-                cycles++
+            for(correctedPags of correctedPags.split(" ")){
+                if(correctedPags == pageId){
+                    cycles++
+                }
+            }
+
+            if(cycles == 0){
+                correctedPags = correctedPags.split(" ")
+                correctedPags.push(pageId)
+                correctedPags = correctedPags.join(" ")
+                sessionStorage.setItem('correctedPages', correctedPags)
             }
         }
-
-        if(cycles == 0){
-            correctedPags = correctedPags.split(" ")
-            correctedPags.push(pageId)
-            correctedPags = correctedPags.join(" ")
-            sessionStorage.setItem('correctedPages', correctedPags)
-        }
-    }
+    }  
+    
 }
 
 function disableInputRadio() {
     for(item of document.querySelectorAll(`Input[Name=${pageId}]`))
-    item.style.pointerEvents = 'None'
+    item.style.pointerEvents = 'none'
 }
 
 function verifyCorrectedPage() {
@@ -80,6 +84,34 @@ function selectedAltContent(alternative) {
 
     altText = altText.substring(altText.indexOf(")") + 2)
     return altText
+}
+
+function verifyAnulated(){
+    let anulada = 0
+    anulada = document.getElementById('correct-alt')
+    if(anulada === null){
+        constructAnulatedQuestion()
+        verify = 1
+        openAnulatedQuestion()
+        disableInputRadio()
+    }
+    else{
+        correctAlternative = document.getElementById('correct-alt').value
+        verify = 0
+        constructAlert()
+        constructIncorrect()
+        constructCorrect()
+    }
+}
+
+function constructAnulatedQuestion() {
+    document.write('<div id="anulated-pop-up" class="correct-pop-up">')
+    document.write('<div id="anulated" class="anulated">')
+    document.write('<h1><b>!!!</b></h1>')
+    document.write('<h3>Questão anulada</h3>')
+    document.write('<span class="close" onClick="closePop()">&times</span>')
+    document.write('<p>Essa questão foi anulada no vestibular pois ela continha um erro de digitação</p>')
+    document.write('</div></div>')
 }
 
 function constructAlert() {
@@ -120,6 +152,13 @@ function constructCorrect() {
     document.write('</div></div>')
 }
 
+function openAnulatedQuestion() {
+    const container = document.getElementById('anulated-pop-up')
+    container.style.display = 'flex'
+    const anulated = document.getElementById('anulated')
+    anulated.style.display = 'block'
+}
+
 function openAlert() {
     const container = document.getElementById('alert-pop-up')
     container.style.display = 'flex'
@@ -142,16 +181,27 @@ function openCorrect() {
 }
 
 function closePop() {
-    const alertPopUp = document.getElementById('alert-pop-up')
-    const incorrectPopUp = document.getElementById('incorrect-pop-up')
-    const correctPopUp = document.getElementById('correct-pop-up')
-    const alert = document.getElementById('alert')
-    const incorrect = document.getElementById('incorrect')
-    const correct = document.getElementById('correct')
-    alertPopUp.style.display = 'none'
-    incorrectPopUp.style.display = 'none'
-    correctPopUp.style.display = 'none'
-    alert.style.display = 'none'
-    incorrect.style.display = 'none'
-    correct.style.display = 'none'
+    if(verify == 1){
+        const anulatedPopUp = document.getElementById('anulated-pop-up')
+        const anulated = document.getElementById('anulated')
+        anulatedPopUp.style.display = 'none'
+        anulated.style.display = 'none'
+    }
+    else{
+        const alertPopUp = document.getElementById('alert-pop-up')
+        const incorrectPopUp = document.getElementById('incorrect-pop-up')
+        const correctPopUp = document.getElementById('correct-pop-up')
+        
+        const alert = document.getElementById('alert')
+        const incorrect = document.getElementById('incorrect')
+        const correct = document.getElementById('correct')
+        
+        alertPopUp.style.display = 'none'
+        incorrectPopUp.style.display = 'none'
+        correctPopUp.style.display = 'none'
+        
+        alert.style.display = 'none'
+        incorrect.style.display = 'none'
+        correct.style.display = 'none'
+    }
 }
