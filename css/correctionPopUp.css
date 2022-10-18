@@ -10,6 +10,28 @@
     position: absolute;
 }
 
+.anulated {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #161b22;
+    border: none;
+    position: relative;
+    margin: auto;
+    position: fixed;
+    display: none;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.anulated p {
+    margin-top: 13px;
+}
+
+.anulated h1 {
+    color: red;
+}
+
 .incorrect {
     text-align: center;
     width: 500px;
@@ -26,6 +48,10 @@
 
 .incorrect p {
     margin-top: 13px;
+}
+
+.incorrect h1 {
+    color: red;
 }
 
 .correct p {
@@ -58,6 +84,10 @@
     display: none;
     border-radius: 8px;
     padding: 15px;
+}
+
+.alert h1 {
+    color: yellow;
 }
 
 .alert h3{
