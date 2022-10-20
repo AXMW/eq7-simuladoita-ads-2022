@@ -1,0 +1,34 @@
+lateral {
+    width: 100%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+.footer {
+    background-color: #161b22;
+
+}
+
+.footer a {
+    color: white;
+
+}
+.footer p {
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.gov-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gov-links a {
+    margin: 0 30px;
+    
+}
