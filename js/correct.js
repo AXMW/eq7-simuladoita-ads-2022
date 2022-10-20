@@ -8,7 +8,7 @@ var verify
 verifyAnulated()
 
 window.addEventListener('load', () => {
-    //verifyCorrectedPage()
+    verifyCorrectedPage()
        
 })
 
@@ -18,7 +18,7 @@ function verifyAnswer() {
         disableInputRadio()
     }
     else{
-        //verifyCorrectedPage()
+        verifyCorrectedPage()
         if(selectedAlternative() == 'none'){
             openAlert()
         }
@@ -32,7 +32,7 @@ function verifyAnswer() {
                 openIncorrect()
             }
             
-            //disableInputRadio()
+            disableInputRadio()
 
             let cycles = 0
 
