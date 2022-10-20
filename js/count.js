@@ -101,10 +101,7 @@ function saveResult() {
 
         timeDoing = (testEnd - testStart) / 1000
     }
-
-    totalIncorrect[-1] -= 4
-    totalCorrect[-1] += 4
-    var correctPercent = Math.round((correctAnswers.length / 70) * 100)
+    let correctPercent = Math.round((totalCorrect.length / 70) * 100)
 
     let date = new Date()
     let dayMonthYear = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0') + '/' + date.getFullYear()
@@ -141,7 +138,7 @@ function saveResult() {
     sessionStorage.setItem('testStart', '')
 
     window.location.href = 'result.html'
-
+    sessionStorage.clear()
 }
 
 function saveEvolutionData(valorASerArmazenado, chaveLocalStorage) {
