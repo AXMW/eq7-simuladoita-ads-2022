@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q35">
@@ -201,19 +202,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-35" value="A"> A) os indivíduos falantes de línguas nativas e seus descendentes não têm absoluta clareza do que perder uma língua pode significar.
+                    <input type="radio" name="Q35" value="A"> A) os indivíduos falantes de línguas nativas e seus descendentes não têm absoluta clareza do que perder uma língua pode significar.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-35" value="B"> B) indivíduos nativos lamentam a perda de sua língua e cultura, mas não querem sobrecarregar seus filhos com a responsabilidade de preservá-las.
+                    <input type="radio" name="Q35" value="B" id="correct-alt"> B) indivíduos nativos lamentam a perda de sua língua e cultura, mas não querem sobrecarregar seus filhos com a responsabilidade de preservá-las.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-35" value="C"> C) antes da extinção de uma língua, aspectos da cultura correspondente já haviam desaparecido.
+                    <input type="radio" name="Q35" value="C"> C) antes da extinção de uma língua, aspectos da cultura correspondente já haviam desaparecido.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-35" value="D"> D) teorias linguísticas afirmam que o desaparecimento de línguas nativas é altamente controverso.                     
+                    <input type="radio" name="Q35" value="D"> D) teorias linguísticas afirmam que o desaparecimento de línguas nativas é altamente controverso.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-35" value="E"> E) a decisão de povos originários e seus descendentes ao abandonar suas línguas nativas tem motivação econômica. 
+                    <input type="radio" name="Q35" value="E"> E) a decisão de povos originários e seus descendentes ao abandonar suas línguas nativas tem motivação econômica. 
                 </span><br>
             
             
@@ -233,8 +234,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -267,5 +268,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

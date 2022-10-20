@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q20">
@@ -182,19 +183,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-20" value="A"> A) a observação de fatos cotidianos aproxima-se da crônica e permite ao narrador relatar algo que o senso comum não percebe imediatamente.
+                    <input type="radio" name="Q20" value="A"> A) a observação de fatos cotidianos aproxima-se da crônica e permite ao narrador relatar algo que o senso comum não percebe imediatamente.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-20" value="B"> B) pelo relato dos fatos cotidianos, o narrador revela que, por trás das aparências, há uma recusa da cultura popular implícita na adesão à estrangeira. 
+                    <input type="radio" name="Q20" value="B"> B) pelo relato dos fatos cotidianos, o narrador revela que, por trás das aparências, há uma recusa da cultura popular implícita na adesão à estrangeira. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-20" value="C"> C) o narrador manifesta sutilmente um juízo acerca do que se passa. 
+                    <input type="radio" name="Q20" value="C"> C) o narrador manifesta sutilmente um juízo acerca do que se passa. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-20" value="D"> D) o relato e a interpretação do fato cotidiano facultam ao leitor formular seus próprios juízos sobre o que se passa.                     
+                    <input type="radio" name="Q20" value="D"> D) o relato e a interpretação do fato cotidiano facultam ao leitor formular seus próprios juízos sobre o que se passa.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-20" value="E"> E) é um relato estritamente objetivo que não busca manifestar nenhuma perspectiva subjetiva ou aspecto despercebido do cotidiano. 
+                    <input type="radio" name="Q20" value="E" id="correct-alt"> E) é um relato estritamente objetivo que não busca manifestar nenhuma perspectiva subjetiva ou aspecto despercebido do cotidiano. 
                 </span><br>
             
             
@@ -214,8 +215,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -248,5 +249,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

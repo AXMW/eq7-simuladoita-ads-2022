@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q64">
@@ -430,19 +431,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-64" value="A"> A) Observação → Hipótese → Experimento → Análise dos Resultados → Conclusões → Observação → ⋯          
+                    <input type="radio" name="Q64" value="A" id="correct-alt"> A) Observação → Hipótese → Experimento → Análise dos Resultados → Conclusões → Observação → ⋯          
                 </span><br>
                 <span>
-                    <input type="radio" name="question-64" value="B"> B) Introdução → Hipótese → Argumentação → Conclusões → Introdução → ⋯
+                    <input type="radio" name="Q64" value="B"> B) Introdução → Hipótese → Argumentação → Conclusões → Introdução → ⋯
                 </span><br>
                 <span>
-                    <input type="radio" name="question-64" value="C"> C) Hipótese → Argumentação → Contra Argumentação → Consenso → Hipótese → ⋯
+                    <input type="radio" name="Q64" value="C"> C) Hipótese → Argumentação → Contra Argumentação → Consenso → Hipótese → ⋯
                 </span><br>
                 <span>
-                    <input type="radio" name="question-64" value="D"> D) Observação → Hipótese → Argumentação → Contra Argumentação → Consenso → Observação → ⋯
+                    <input type="radio" name="Q64" value="D"> D) Observação → Hipótese → Argumentação → Contra Argumentação → Consenso → Observação → ⋯
                 </span><br>
                 <span>
-                    <input type="radio" name="question-64" value="E"> E) Hipótese → Argumentação → Consenso → Experimento → Observação → Hipótese → ⋯
+                    <input type="radio" name="Q64" value="E"> E) Hipótese → Argumentação → Consenso → Experimento → Observação → Hipótese → ⋯
                 </span><br>
             
             
@@ -462,8 +463,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+                <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+                <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">  
             </div>
            
           
@@ -496,5 +497,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+	<script src="../../js/correct.js"></script>
   </body>
 </html>

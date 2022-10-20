@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q31">
@@ -195,19 +196,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-31" value="A"> A) em nossa prática política diária, novas ideias radicais podem surgir de um pensamento aparentemente banal e estúpido.
+                    <input type="radio" name="Q31" value="A"> A) em nossa prática política diária, novas ideias radicais podem surgir de um pensamento aparentemente banal e estúpido.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-31" value="B"> B) o fracasso em considerarmos que a estupidez é inevitável nos conduz a outro malogro.
+                    <input type="radio" name="Q31" value="B"> B) o fracasso em considerarmos que a estupidez é inevitável nos conduz a outro malogro.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-31" value="C"> C) a ubiquidade da estupidez implica em sua evitabilidade.
+                    <input type="radio" name="Q31" value="C" id="correct-alt"> C) a ubiquidade da estupidez implica em sua evitabilidade.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-31" value="D"> D) a estupidez não pode ser contida em domínios como ignorância, erro ou pós-verdade.                     
+                    <input type="radio" name="Q31" value="D"> D) a estupidez não pode ser contida em domínios como ignorância, erro ou pós-verdade.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-31" value="E"> E) a estupidez é um problema do pensamento do qual não podemos escapar. 
+                    <input type="radio" name="Q31" value="E"> E) a estupidez é um problema do pensamento do qual não podemos escapar. 
                 </span><br>
             
             
@@ -227,8 +228,9 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -261,5 +263,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

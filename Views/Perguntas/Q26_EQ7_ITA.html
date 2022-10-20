@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q26">
@@ -182,19 +183,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-26" value="A"> A) é um narrador predominantemente em terceira pessoa, que utiliza, por vezes, o discurso indireto livre para se confundir com a personagem protagonista.
+                    <input type="radio" name="Q26" value="A" id="correct-alt"> A) é um narrador predominantemente em terceira pessoa, que utiliza, por vezes, o discurso indireto livre para se confundir com a personagem protagonista.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-26" value="B"> B) é um narrador em primeira pessoa que constrói um monólogo interior. 
+                    <input type="radio" name="Q26" value="B"> B) é um narrador em primeira pessoa que constrói um monólogo interior. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-26" value="C"> C) é um narrador protagonista, que relata, em primeira pessoa, as experiências que outra personagem lhe contou. 
+                    <input type="radio" name="Q26" value="C"> C) é um narrador protagonista, que relata, em primeira pessoa, as experiências que outra personagem lhe contou. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-26" value="D"> D) é um narrador em terceira pessoa pouco atento aos pensamentos da personagem protagonista.                     
+                    <input type="radio" name="Q26" value="D"> D) é um narrador em terceira pessoa pouco atento aos pensamentos da personagem protagonista.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-26" value="E"> E) é um narrador judicativo que recrimina a culpa que a personagem protagonista sente e, por isso, faz perguntas a si próprio. 
+                    <input type="radio" name="Q26" value="E"> E) é um narrador judicativo que recrimina a culpa que a personagem protagonista sente e, por isso, faz perguntas a si próprio. 
                 </span><br>
             
             
@@ -214,8 +215,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -248,5 +249,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

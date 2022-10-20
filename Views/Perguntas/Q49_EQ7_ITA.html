@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q49">
@@ -198,19 +199,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-4" value="A"> A) l√2/12.
+                    <input type="radio" name="Q49" value="A"> A) l√2/12.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-49" value="B"> B)  l√3/12.
+                    <input type="radio" name="Q49" value="B"> B)  l√3/12.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-49" value="C"> C) 5l√2/12.
+                    <input type="radio" name="Q49" value="C"> C) 5l√2/12.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-49" value="D"> D) 5l√3/12.
+                    <input type="radio" name="Q49" value="D" id="correct-alt"> D) 5l√3/12.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-49" value="E"> E) l√3/6.
+                    <input type="radio" name="Q49" value="E"> E) l√3/6.
                 </span><br>
             
             
@@ -230,8 +231,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -264,5 +265,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

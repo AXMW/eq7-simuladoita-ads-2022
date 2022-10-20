@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q53">
@@ -198,19 +199,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-53" value="A"> A) O triângulo não é isóceles.
+                    <input type="radio" name="Q53" value="A"> A) O triângulo não é isóceles.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-53" value="B"> B) O triângulo não é retângulo.
+                    <input type="radio" name="Q53" value="B"> B) O triângulo não é retângulo.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-53" value="C"> C) O triângulo não é actuângulo.
+                    <input type="radio" name="Q53" value="C" id="correct-alt"
+                    > C) O triângulo não é actuângulo.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-53" value="D"> D) O triângulo não é obtusângulo.
+                    <input type="radio" name="Q53" value="D"> D) O triângulo não é obtusângulo.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-53" value="E"> E) Não se pode garantir nenhum dos itens anteriores.
+                    <input type="radio" name="Q53" value="E"> E) Não se pode garantir nenhum dos itens anteriores.
                 </span><br>
             
             
@@ -230,8 +232,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -264,5 +266,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

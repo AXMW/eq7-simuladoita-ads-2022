@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q14">
@@ -191,7 +192,7 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-14" value="A"> A) &MediumSpace;
+                    <input type="radio" name="Q14" value="A" id="correct-alt"> A) &MediumSpace;
                     <div class="frac">
                         <span>n<sub>1</sub>&mu;<sub>0</sub>I<sub>0</sub>a&sup2;A</span>
                         <span class="symbol">/</span>
@@ -199,7 +200,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-14" value="B"> B) &MediumSpace;
+                    <input type="radio" name="Q14" value="B"> B) &MediumSpace;
                     <div class="frac">
                         <span>n<sub>1</sub>&mu;<sub>0</sub>I<sub>0</sub>bA</span>
                         <span class="symbol">/</span>
@@ -207,7 +208,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-14" value="C"> C) &MediumSpace;
+                    <input type="radio" name="Q14" value="C"> C) &MediumSpace;
                     <div class="frac">
                         <span>n<sub>1</sub>n<sub>2</sub>&mu;<sub>0</sub>I<sub>0</sub>&pi;a&sup2;A</span>
                         <span class="symbol">/</span>
@@ -215,7 +216,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-14" value="D"> D) &MediumSpace;
+                    <input type="radio" name="Q14" value="D"> D) &MediumSpace;
                     <div class="frac">
                         <span>n<sub>1</sub>&mu;<sub>0</sub>I<sub>0</sub>a&sup2;A(p<sub>1</sub> &plus; p<sub>2</sub>)</span>
                         <span class="symbol">/</span>
@@ -223,7 +224,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-14" value="E"> E) &MediumSpace;
+                    <input type="radio" name="Q14" value="E"> E) &MediumSpace;
                     <div class="frac">
                         <span>n<sub>1</sub>&mu;<sub>0</sub>I<sub>0</sub>a&sup2;A</span>
                         <span class="symbol">/</span>
@@ -248,8 +249,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -282,5 +283,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

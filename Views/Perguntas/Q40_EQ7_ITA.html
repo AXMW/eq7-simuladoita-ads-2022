@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q40">
@@ -199,19 +200,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-40" value="A"> A) o conformismo social.
+                    <input type="radio" name="Q40" value="A" id="correct-alt"> A) o conformismo social.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-40" value="B"> B) a mobilidade social.
+                    <input type="radio" name="Q40" value="B"> B) a mobilidade social.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-40" value="C"> C) a justiça social.
+                    <input type="radio" name="Q40" value="C"> C) a justiça social.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-40" value="D"> D) a crença em um mundo melhor.                    
+                    <input type="radio" name="Q40" value="D"> D) a crença em um mundo melhor.                    
                 </span><br>
                 <span>
-                    <input type="radio" name="question-40" value="E"> E) a inquietação psicológica. 
+                    <input type="radio" name="Q40" value="E"> E) a inquietação psicológica. 
                 </span><br>
             
             
@@ -231,8 +232,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -265,5 +266,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

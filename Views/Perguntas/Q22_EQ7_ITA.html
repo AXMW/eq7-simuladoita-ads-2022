@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q22">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-22" value="A"> A) “Eta vida besta, meu Deus.” (“Cidadezinha qualquer”).
+                    <input type="radio" name="Q22" value="A"> A) “Eta vida besta, meu Deus.” (“Cidadezinha qualquer”).
                 </span><br>
                 <span>
-                    <input type="radio" name="question-22" value="B"> B) “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”). 
+                    <input type="radio" name="Q22" value="B" id="correct-alt"> B) “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-22" value="C"> C) “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”). 
+                    <input type="radio" name="Q22" value="C"> C) “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-22" value="D"> D) “E como ficou chato ser moderno./ Agora serei eterno.” (“Eterno”).                     
+                    <input type="radio" name="Q22" value="D"> D) “E como ficou chato ser moderno./ Agora serei eterno.” (“Eterno”).                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-22" value="E"> E) “Então nos punimos em nossa delícia./ O amor atinge raso, e fere tanto.” (“Ciclo”). 
+                    <input type="radio" name="Q22" value="E"> E) “Então nos punimos em nossa delícia./ O amor atinge raso, e fere tanto.” (“Ciclo”). 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -236,5 +237,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

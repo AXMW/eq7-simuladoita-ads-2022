@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q38">
@@ -199,19 +200,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-38" value="A"> A) since meritocracy resembles the species selection process, it has a biological nature.
+                    <input type="radio" name="Q38" value="A"> A) since meritocracy resembles the species selection process, it has a biological nature.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-38" value="B"> B) effort and developed ability will be rewarded, so meritocracy is an unbiased ideological ideal.
+                    <input type="radio" name="Q38" value="B" id="correct-alt"> B) effort and developed ability will be rewarded, so meritocracy is an unbiased ideological ideal.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-38" value="C"> C) meritocracy is based on the concept of self-made fortunate man.
+                    <input type="radio" name="Q38" value="C"> C) meritocracy is based on the concept of self-made fortunate man.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-38" value="D"> D) skill and effort are determined by fortuitous opportunities that should be identified.                     
+                    <input type="radio" name="Q38" value="D"> D) skill and effort are determined by fortuitous opportunities that should be identified.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-38" value="E"> E) heredity should play a decisive part for a successful outcome. 
+                    <input type="radio" name="Q38" value="E"> E) heredity should play a decisive part for a successful outcome. 
                 </span><br>
             
             
@@ -231,8 +232,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -265,5 +266,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

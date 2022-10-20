@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q48">
@@ -200,19 +201,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-48" value="A"> A) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/9 + y<sup>2</sup>/12 < 1}.
+                    <input type="radio" name="Q48" value="A"> A) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/9 + y<sup>2</sup>/12 < 1}.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-48" value="B"> B) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/4 + y<sup>2</sup>/2 > 1}.
+                    <input type="radio" name="Q48" value="B"> B) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/4 + y<sup>2</sup>/2 > 1}.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-48" value="C"> C) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/9 − y<sup>2</sup>/2 < 1}.
+                    <input type="radio" name="Q48" value="C" 
+                    id="correct-alt"> C) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / x<sup>2</sup>/9 − y<sup>2</sup>/2 < 1}.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-48" value="D"> D) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / 3x<sup>2</sup> − 2y<sup>2</sup> > 1}.                  
+                    <input type="radio" name="Q48" value="D"> D) C ∈ {(x, y) ∈ ℝ<sup>2</sup> / 3x<sup>2</sup> − 2y<sup>2</sup> > 1}.                  
                 </span><br>
                 <span>
-                    <input type="radio" name="question-48" value="E"> E) Nenhuma das alternativas anteriores.
+                    <input type="radio" name="Q48" value="E"> E) Nenhuma das alternativas anteriores.
                 </span><br>
             
             
@@ -232,8 +234,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -266,5 +268,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

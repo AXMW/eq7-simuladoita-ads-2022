@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q34">
@@ -210,19 +211,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-34" value="A"> A) convidou dois representantes homens.
+                    <input type="radio" name="Q34" value="A"> A) convidou dois representantes homens.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-34" value="B"> B) não deu oportunidade de voz a uma representante mulher.
+                    <input type="radio" name="Q34" value="B"> B) não deu oportunidade de voz a uma representante mulher.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-34" value="C"> C) relegou a representante mulher a um assento secundário.
+                    <input type="radio" name="Q34" value="C" id="correct-alt"> C) relegou a representante mulher a um assento secundário.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-34" value="D"> D) não cumprimentou a representante mulher.                     
+                    <input type="radio" name="Q34" value="D"> D) não cumprimentou a representante mulher.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-34" value="E"> E) ficou constrangido com a falha na organização do evento. 
+                    <input type="radio" name="Q34" value="E"> E) ficou constrangido com a falha na organização do evento. 
                 </span><br>
             
             
@@ -242,8 +243,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -276,5 +277,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

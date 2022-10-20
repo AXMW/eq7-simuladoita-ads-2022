@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q28">
@@ -187,19 +188,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-28" value="A"> A) a visita de Laura, protagonista do conto, à antiga casa de sua família, aconteceu realmente, mas isso não a afeta em nada.
+                    <input type="radio" name="Q28" value="A"> A) a visita de Laura, protagonista do conto, à antiga casa de sua família, aconteceu realmente, mas isso não a afeta em nada.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-28" value="B"> B) a visita de Laura à antiga casa de sua família só aconteceu na sua imaginação, o que revela a futilidade da personagem. 
+                    <input type="radio" name="Q28" value="B"> B) a visita de Laura à antiga casa de sua família só aconteceu na sua imaginação, o que revela a futilidade da personagem. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-28" value="C"> C) por nunca ter nutrido sentimentos de amor por sua família, Laura decide voltar no meio do caminho e cancelar a visita. 
+                    <input type="radio" name="Q28" value="C"> C) por nunca ter nutrido sentimentos de amor por sua família, Laura decide voltar no meio do caminho e cancelar a visita. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-28" value="D"> D) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que as suas memórias a levam a passar a sua vida a limpo.                     
+                    <input type="radio" name="Q28" value="D" id="correct-alt"> D) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que as suas memórias a levam a passar a sua vida a limpo.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-28" value="E"> E) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que nenhuma lembrança é capaz de alterar a sua falsidade e dissimulação em relação ao passado. 
+                    <input type="radio" name="Q28" value="E"> E) mais importante do que saber se a visita de Laura à antiga casa de sua família aconteceu realmente ou não é entender que nenhuma lembrança é capaz de alterar a sua falsidade e dissimulação em relação ao passado. 
                 </span><br>
             
             
@@ -219,8 +220,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -253,5 +254,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

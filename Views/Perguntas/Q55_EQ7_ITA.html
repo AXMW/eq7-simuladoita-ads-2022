@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q55">
@@ -205,35 +206,35 @@
           <!--alternativas-->
           <div class="alternatives">
                 <span>
-                    <input type="radio" name="question-55" value="A"> A) m(<div class="frac">
+                    <input type="radio" name="Q55" value="A"> A) m(<div class="frac">
                         
                         <span class="symbol">/</span>
                         <span class="bottom">AC</span>
                     </div>) = √5/5.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-55" value="B"> B) m(<div class="frac">
+                    <input type="radio" name="Q55" value="B"> B) m(<div class="frac">
                         
                         <span class="symbol">/</span>
                         <span class="bottom">AC</span>
                     </div>) = 2√5/5.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-55" value="C"> C) m(<div class="frac">
+                    <input type="radio" name="Q55" value="C" id="correct-alt" > C) m(<div class="frac">
                         
                         <span class="symbol">/</span>
                         <span class="bottom">AC</span>
                     </div>) = 4√5/5.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-55" value="D"> D) m(<div class="frac">
+                    <input type="radio" name="Q55" value="D"> D) m(<div class="frac">
                         
                         <span class="symbol">/</span>
                         <span class="bottom">AC</span>
                     </div>) = 8√5/5.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-55" value="E"> E)  m(<div class="frac">
+                    <input type="radio" name="Q55" value="E"> E)  m(<div class="frac">
                         
                         <span class="symbol">/</span>
                         <span class="bottom">AC</span>
@@ -257,8 +258,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -291,5 +292,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

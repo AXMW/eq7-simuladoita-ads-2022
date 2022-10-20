@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q16">
@@ -170,19 +171,19 @@
           <!--alternativas-->
           <div class="alternatives">
             <span>
-              <input type="radio" name="question-16" value="A"> A) o respeito distanciado, porém, genuíno, que as classes populares da época nutriam para com os políticos.
+              <input type="radio" name="Q16" value="A"> A) o respeito distanciado, porém, genuíno, que as classes populares da época nutriam para com os políticos.
             </span><br>
             <span>
-              <input type="radio" name="question-16" value="B"> B) a idolatria do autor para com os políticos que defendiam a volta do regime monárquico.
+              <input type="radio" name="Q16" value="B"> B) a idolatria do autor para com os políticos que defendiam a volta do regime monárquico.
             </span><br>
             <span>
-              <input type="radio" name="question-16" value="C"> C) a ironia com que a narrativa retrata a política institucional da República Velha.
+              <input type="radio" name="Q16" value="C" id="correct-alt"> C) a ironia com que a narrativa retrata a política institucional da República Velha.
             </span><br>
             <span>
-              <input type="radio" name="question-16" value="D"> D) a crença do narrador de que os males da política tinham origem nas intrigas das cortes europeias.
+              <input type="radio" name="Q16" value="D"> D) a crença do narrador de que os males da política tinham origem nas intrigas das cortes europeias.
             </span><br>
             <span>
-              <input type="radio" name="question-16" value="E"> E) o tom de desesperança para com o futuro do Brasil manifestado na psicologia das personagens femininas.
+              <input type="radio" name="Q16" value="E"> E) o tom de desesperança para com o futuro do Brasil manifestado na psicologia das personagens femininas.
             </span><br>
           </div>
           <!--botões ultima, proxima e questões depois-->
@@ -200,8 +201,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -234,5 +235,7 @@
         </div>
       </footer>
       <script src="../../js/menuAni.js"></script>
+      <script src="../../js/count.js"></script>
+		  <script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q58">
@@ -430,19 +431,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-58" value="A"> A) 0,19
+                    <input type="radio" name="Q58" value="A"> A) 0,19
                 </span><br>
                 <span>
-                    <input type="radio" name="question-58" value="B"> B) 0,37
+                    <input type="radio" name="Q58" value="B" id="correct-alt"> B) 0,37
                 </span><br>
                 <span>
-                    <input type="radio" name="question-58" value="C"> C) 1,88
+                    <input type="radio" name="Q58" value="C"> C) 1,88
                 </span><br>
                 <span>
-                    <input type="radio" name="question-58" value="D"> D) 3,76 
+                    <input type="radio" name="Q58" value="D"> D) 3,76 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-58" value="E"> E) 7,52
+                    <input type="radio" name="Q58" value="E"> E) 7,52
                 </span><br>
             
             
@@ -462,8 +463,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+                <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+                <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -496,5 +497,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+	<script src="../../js/correct.js"></script>
   </body>
 </html>

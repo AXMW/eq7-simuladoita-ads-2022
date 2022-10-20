@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q30">
@@ -178,19 +179,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-30" value="A"> A) a passagem exprime a moral da história, qual seja: a política é impossível sem jatinhos.
+                    <input type="radio" name="Q30" value="A"> A) a passagem exprime a moral da história, qual seja: a política é impossível sem jatinhos.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-30" value="B"> B) a preocupação das personagens com as aparências e a comunicação com o público representa os seus ideais republicanos e democráticos.
+                    <input type="radio" name="Q30" value="B"> B) a preocupação das personagens com as aparências e a comunicação com o público representa os seus ideais republicanos e democráticos.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-30" value="C"> C) a preocupação principal das personagens era promover uma comunicação transparente e honesta com o público. 
+                    <input type="radio" name="Q30" value="C"> C) a preocupação principal das personagens era promover uma comunicação transparente e honesta com o público. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-30" value="D"> D) a linguagem do Chefe das Relações Públicas evidencia que ele não se preocupa apenas com os objetivos, mas também com a dignidade dos meios para atingi-los.                     
+                    <input type="radio" name="Q30" value="D"> D) a linguagem do Chefe das Relações Públicas evidencia que ele não se preocupa apenas com os objetivos, mas também com a dignidade dos meios para atingi-los.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-30" value="E"> E) a tradução do adágio latino, na última frase, indica a mentalidade utilitarista e a falta de princípios superiores das personagens em questão. 
+                    <input type="radio" name="Q30" value="E" id="correct-alt"> E) a tradução do adágio latino, na última frase, indica a mentalidade utilitarista e a falta de princípios superiores das personagens em questão. 
                 </span><br>
             
             
@@ -210,8 +211,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -244,5 +245,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q45">
@@ -198,19 +199,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-45" value="A"> A) 4.
+                    <input type="radio" name="Q45" value="A"> A) 4.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-45" value="B"> B) 6.
+                    <input type="radio" name="Q45" value="B"> B) 6.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-45" value="C"> C) 8.
+                    <input type="radio" name="Q45" value="C"> C) 8.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-45" value="D"> D) 9.                    
+                    <input type="radio" name="Q45" value="D" 
+                    id="correct-alt"> D) 9.                    
                 </span><br>
                 <span>
-                    <input type="radio" name="question-45" value="E"> E) 10.
+                    <input type="radio" name="Q45" value="E"> E) 10.
                 </span><br>
             
             
@@ -230,8 +232,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -264,5 +266,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

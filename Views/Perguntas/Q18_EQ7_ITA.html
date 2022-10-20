@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q18">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-18" value="A"> A) é um narrador onisciente, que julga crítica e sarcasticamente os fatos e as personagens. 
+                    <input type="radio" name="Q18" value="A" id="correct-alt"> A) é um narrador onisciente, que julga crítica e sarcasticamente os fatos e as personagens. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-18" value="B"> B) é um narrador personagem, imparcial, em 3ª pessoa. 
+                    <input type="radio" name="Q18" value="B"> B) é um narrador personagem, imparcial, em 3ª pessoa. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-18" value="C"> C) é um narrador em 3ª pessoa, imparcial ao narrar os fatos, mas que julga criticamente as personagens. 
+                    <input type="radio" name="Q18" value="C"> C) é um narrador em 3ª pessoa, imparcial ao narrar os fatos, mas que julga criticamente as personagens. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-18" value="D"> D) é um narrador onisciente, em 1ª pessoa, que julga moralmente as demais personagens.                     
+                    <input type="radio" name="Q18" value="D"> D) é um narrador onisciente, em 1ª pessoa, que julga moralmente as demais personagens.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-18" value="E"> E) é um narrador onisciente, distanciado dos fatos e das personagens. 
+                    <input type="radio" name="Q18" value="E"> E) é um narrador onisciente, distanciado dos fatos e das personagens. 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -236,5 +237,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

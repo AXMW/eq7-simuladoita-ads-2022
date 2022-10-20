@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q24">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-24" value="A"> A) a sua poética mantém uma relação ambígua com a memória, com traços de esperança, embora sem saudosismo ou idealização, como atestam os versos: “Pois de tudo fica um pouco./ Fica um pouco de teu queixo/ no queixo de tua filha.” (“Resíduo”).
+                    <input type="radio" name="Q24" value="A"> A) a sua poética mantém uma relação ambígua com a memória, com traços de esperança, embora sem saudosismo ou idealização, como atestam os versos: “Pois de tudo fica um pouco./ Fica um pouco de teu queixo/ no queixo de tua filha.” (“Resíduo”).
                 </span><br>
                 <span>
-                    <input type="radio" name="question-24" value="B"> B) não é sua característica tratar do amor como luxúria carnal que intensifica a dor de amar, conforme atestam os versos: “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”). 
+                    <input type="radio" name="Q24" value="B"> B) não é sua característica tratar do amor como luxúria carnal que intensifica a dor de amar, conforme atestam os versos: “Não cantarei amores que não tenho,/ e, quando tive, nunca celebrei.” (“Nudez”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-24" value="C"> C) não é marcada por terna evocação saudosista do passado, como atestam os versos: “E de tudo fica um pouco./ Oh abre os vidros de loção/ e abafa/ o insuportável mau cheiro da memória.” (“Resíduo”). 
+                    <input type="radio" name="Q24" value="C"> C) não é marcada por terna evocação saudosista do passado, como atestam os versos: “E de tudo fica um pouco./ Oh abre os vidros de loção/ e abafa/ o insuportável mau cheiro da memória.” (“Resíduo”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-24" value="D"> D) o poeta jamais demonstra dúvidas relativamente ao amor, conforme atestam os versos: “Amarei mesmo Fulana?/ ou é ilusão de sexo?” (“O mito”).                     
+                    <input type="radio" name="Q24" value="D"> D) o poeta jamais demonstra dúvidas relativamente ao amor, conforme atestam os versos: “Amarei mesmo Fulana?/ ou é ilusão de sexo?” (“O mito”).                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-24" value="E"> E) o poeta não evita o tema da memória e só trata da expectativa do futuro, como atestam os versos: “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”). 
+                    <input type="radio" name="Q24" value="E"> E) o poeta não evita o tema da memória e só trata da expectativa do futuro, como atestam os versos: “Amanhecem de novo as antigas manhãs/ que não vivi jamais, pois jamais me sorriram.” (“Campo de flores”). 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -235,6 +236,8 @@
         </div>
       </div>
     </footer>
-    <script src="../../js/menuAni.js"></script>
+    <script src="../../js/menuAni.js"></script>    
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

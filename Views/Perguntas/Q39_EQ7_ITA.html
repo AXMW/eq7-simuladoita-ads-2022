@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q39">
@@ -199,19 +200,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-39" value="A"> A) should be adopted in organizations in a transparent way.
+                    <input type="radio" name="Q39" value="A"> A) should be adopted in organizations in a transparent way.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-39" value="B"> B) has the potential to be transformed into a fair assessment tool in companies.
+                    <input type="radio" name="Q39" value="B"> B) has the potential to be transformed into a fair assessment tool in companies.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-39" value="C"> C) could eliminate inequalities and prejudice against minorities if well conducted.
+                    <input type="radio" name="Q39" value="C"> C) could eliminate inequalities and prejudice against minorities if well conducted.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-39" value="D"> D) is surprising because it provides a social ‘even playing field’.                     
+                    <input type="radio" name="Q39" value="D"> D) is surprising because it provides a social ‘even playing field’.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-39" value="E"> E) is self-contradictory since it reinforces the inequalities it is supposed to eradicate. 
+                    <input type="radio" name="Q39" value="E" id="correct-alt"> E) is self-contradictory since it reinforces the inequalities it is supposed to eradicate. 
                 </span><br>
             
             
@@ -231,8 +232,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -265,5 +266,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

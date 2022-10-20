@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q25">
@@ -182,19 +183,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-25" value="A"> A) os versos evidenciam que o amor, na poética de Drummond, não representa um tema importante e é apenas ligeiramente abordado em seus poemas.
+                    <input type="radio" name="Q25" value="A"> A) os versos evidenciam que o amor, na poética de Drummond, não representa um tema importante e é apenas ligeiramente abordado em seus poemas.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-25" value="B"> B) os versos evidenciam a centralidade do amor erótico na poética de Drummond, por meio do qual a subjetividade individual se exprime. 
+                    <input type="radio" name="Q25" value="B"> B) os versos evidenciam a centralidade do amor erótico na poética de Drummond, por meio do qual a subjetividade individual se exprime. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-25" value="C"> C) os versos evidenciam que, na poética de Drummond, o amor vai além do sentimentalismo individual para englobar relações humanas mais profundas. 
+                    <input type="radio" name="Q25" value="C" id="correct-alt"> C) os versos evidenciam que, na poética de Drummond, o amor vai além do sentimentalismo individual para englobar relações humanas mais profundas. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-25" value="D"> D) nestes versos, o poeta reduz o amor ao ato sexual, ao desejo carnal entre homem e mulher.                     
+                    <input type="radio" name="Q25" value="D"> D) nestes versos, o poeta reduz o amor ao ato sexual, ao desejo carnal entre homem e mulher.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-25" value="E"> E) nestes versos, o amor restringe-se a um sentimentalismo convencional, evidenciado pela escolha da forma tradicional do soneto para exprimir o tema. 
+                    <input type="radio" name="Q25" value="E"> E) nestes versos, o amor restringe-se a um sentimentalismo convencional, evidenciado pela escolha da forma tradicional do soneto para exprimir o tema. 
                 </span><br>
             
             
@@ -214,8 +215,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -248,5 +249,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

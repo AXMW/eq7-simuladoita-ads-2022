@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q57">
@@ -430,19 +431,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-57" value="A"> A) A energia reticular é a energia envolvida na formação do sólido cristalino quando o cristal sólido se forma a partir de íons separados no estado gasoso.
+                    <input type="radio" name="Q57" value="A"> A) A energia reticular é a energia envolvida na formação do sólido cristalino quando o cristal sólido se forma a partir de íons separados no estado gasoso.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-57" value="B"> B) O ciclo de Born-Haber é um método usado para determinação do valor da energia reticular.
+                    <input type="radio" name="Q57" value="B"> B) O ciclo de Born-Haber é um método usado para determinação do valor da energia reticular.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-57" value="C"> C) A energia reticular é função das cargas dos íons e da distância entre eles.
+                    <input type="radio" name="Q57" value="C"> C) A energia reticular é função das cargas dos íons e da distância entre eles.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-57" value="D"> D) Um sólido que sofre mudança de estrutura cristalina mantém constante sua energia reticular. 
+                    <input type="radio" name="Q57" value="D" id="correct-alt"> D) Um sólido que sofre mudança de estrutura cristalina mantém constante sua energia reticular. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-57" value="E"> E) A energia reticular representa a soma entre as forças de atração e repulsão eletrostática.
+                    <input type="radio" name="Q57" value="E"> E) A energia reticular representa a soma entre as forças de atração e repulsão eletrostática.
                 </span><br>
             
             
@@ -462,8 +463,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+                <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+                <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">  
             </div>
            
           
@@ -496,5 +497,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

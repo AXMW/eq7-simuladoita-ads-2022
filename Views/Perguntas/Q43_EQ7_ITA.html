@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q43">
@@ -206,19 +207,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-43" value="A"> A) Não existe m ∈ ℝ tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
+                    <input type="radio" name="Q43" value="A"> A) Não existe m ∈ ℝ tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-43" value="B"> B) Existe exatamente um m > 0 tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
+                    <input type="radio" name="Q43" value="B"> B) Existe exatamente um m > 0 tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-43" value="C"> C) Existe exatamente um m < 0 tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
+                    <input type="radio" name="Q43" value="C" id="correct-alt"> C) Existe exatamente um m < 0 tal que S<sub>1</sub> é equivalente a S<sub>2</sub>.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-43" value="D"> D) Existem exatamente dois valores distintos de m tais que S<sub>1</sub> é equivalente a S<sub>2</sub>.                    
+                    <input type="radio" name="Q43" value="D"> D) Existem exatamente dois valores distintos de m tais que S<sub>1</sub> é equivalente a S<sub>2</sub>.                    
                 </span><br>
                 <span>
-                    <input type="radio" name="question-43" value="E"> E) Existem infinitos valores distintos para m tais que S<sub>1</sub> é equivalente a S<sub>2</sub>. 
+                    <input type="radio" name="Q43" value="E"> E) Existem infinitos valores distintos para m tais que S<sub>1</sub> é equivalente a S<sub>2</sub>. 
                 </span><br>
             
             
@@ -238,8 +239,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -272,5 +273,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

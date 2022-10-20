@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q23">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-23" value="A"> A) o poeta quer dizer que a divisão é rígida e espelha fielmente as fases de sua obra.
+                    <input type="radio" name="Q23" value="A"> A) o poeta quer dizer que a divisão é rígida e espelha fielmente as fases de sua obra.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-23" value="B"> B) o poeta admite, com ironia, a própria falibilidade e faculta ao leitor a liberdade de outra organização dos poemas. 
+                    <input type="radio" name="Q23" value="B" id="correct-alt"> B) o poeta admite, com ironia, a própria falibilidade e faculta ao leitor a liberdade de outra organização dos poemas. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-23" value="C"> C) a Antologia poética deve ser entendida normativamente, isto é, segundo uma “ordem interna” inalterável e que representa a chave da poética de Drummond. 
+                    <input type="radio" name="Q23" value="C"> C) a Antologia poética deve ser entendida normativamente, isto é, segundo uma “ordem interna” inalterável e que representa a chave da poética de Drummond. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-23" value="D"> D) o poeta retira do leitor a possibilidade de interpretar a sua poesia.                     
+                    <input type="radio" name="Q23" value="D"> D) o poeta retira do leitor a possibilidade de interpretar a sua poesia.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-23" value="E"> E) é evidente a falta de critério para a seleção dos poemas, o que indica apenas a intenção de amostragem, sem qualquer planejamento ou organização. 
+                    <input type="radio" name="Q23" value="E"> E) é evidente a falta de critério para a seleção dos poemas, o que indica apenas a intenção de amostragem, sem qualquer planejamento ou organização. 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -236,5 +237,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q56">
@@ -450,19 +451,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-56" value="A"> A) Apenas I, II e III
+                    <input type="radio" name="Q56" value="A"> A) Apenas I, II e III
                 </span><br>
                 <span>
-                    <input type="radio" name="question-56" value="B"> B) Apenas I e IV.
+                    <input type="radio" name="Q56" value="B"> B) Apenas I e IV.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-56" value="C"> C) Apenas II, III e IV
+                    <input type="radio" name="Q56" value="C"> C) Apenas II, III e IV
                 </span><br>
                 <span>
-                    <input type="radio" name="question-56" value="D"> D) Apenas IV e V 
+                    <input type="radio" name="Q56" value="D" 
+                    id="correct-alt"> D) Apenas IV e V 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-56" value="E"> E)  Todas
+                    <input type="radio" name="Q56" value="E"> E)  Todas
                 </span><br>
             
             
@@ -482,8 +484,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+                <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+                <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -516,5 +518,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+	<script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q63">
@@ -442,19 +443,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-63" value="A"> A) Com a espessura de uma folha fina, somente o material W é capaz de defletir partículas 𝜶.  
+                    <input type="radio" name="Q63" value="A"> A) Com a espessura de uma folha fina, somente o material W é capaz de defletir partículas 𝜶.  
                 </span><br>
                 <span>
-                    <input type="radio" name="question-63" value="B"> B) Conclusões não podem ser tiradas sobre os experimentos II, III e IV, pois o experimento I mostrou que a taxa de partículas defletidas é muito baixa para um dos materiais.                     
+                    <input type="radio" name="Q63" value="B" id="correct-alt"> B) Conclusões não podem ser tiradas sobre os experimentos II, III e IV, pois o experimento I mostrou que a taxa de partículas defletidas é muito baixa para um dos materiais.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-63" value="C"> C) A medição obtida no experimento I contém algum erro, visto que o número resultante da soma de partículas registrado nos detectores 1 e 2 não é igual ao de partículas lançadas pelo canhão.
+                    <input type="radio" name="Q63" value="C"> C) A medição obtida no experimento I contém algum erro, visto que o número resultante da soma de partículas registrado nos detectores 1 e 2 não é igual ao de partículas lançadas pelo canhão.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-63" value="D"> D) Os experimentos confirmam que os materiais X, Y e Z são transparentes às partículas 𝜶. 
+                    <input type="radio" name="Q63" value="D"> D) Os experimentos confirmam que os materiais X, Y e Z são transparentes às partículas 𝜶. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-63" value="E"> E) Se todos os materiais fossem bombardeados por um mesmo número de partículas 𝜶, eles apresentariam exatamente o mesmo número de partículas nos detectores 1 e 2, contanto que todos tivessem a mesma espessura.
+                    <input type="radio" name="Q63" value="E"> E) Se todos os materiais fossem bombardeados por um mesmo número de partículas 𝜶, eles apresentariam exatamente o mesmo número de partículas nos detectores 1 e 2, contanto que todos tivessem a mesma espessura.
                 </span><br>
             
             
@@ -474,8 +475,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -508,5 +509,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+	<script src="../../js/correct.js"></script>
   </body>
 </html>

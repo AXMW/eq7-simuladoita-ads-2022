@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q27">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-27" value="A"> A) “Se por acaso alguém tinha pensado em comprar um novo fio dental porque este estava no fim. Não está, respondi, é que ele se enredou lá dentro, se a gente tirar esta plaqueta (tentei levantar a plaqueta) a gente vê que o rolo está inteiro mas enredado e quando o fio se enreda desse jeito, nunca mais!, melhor jogar fora e começar outro rolo. Não joguei.” (“Noturno amarelo”).
+                    <input type="radio" name="Q27" value="A"> A) “Se por acaso alguém tinha pensado em comprar um novo fio dental porque este estava no fim. Não está, respondi, é que ele se enredou lá dentro, se a gente tirar esta plaqueta (tentei levantar a plaqueta) a gente vê que o rolo está inteiro mas enredado e quando o fio se enreda desse jeito, nunca mais!, melhor jogar fora e começar outro rolo. Não joguei.” (“Noturno amarelo”).
                 </span><br>
                 <span>
-                    <input type="radio" name="question-27" value="B"> B) “Chega também de banho? ela perguntou enquanto dava tapinhas no queixo. Ele calçou os chinelos: se não estivesse tão cansado, poderia odiá-la.” (“A mão no ombro”). 
+                    <input type="radio" name="Q27" value="B"> B) “Chega também de banho? ela perguntou enquanto dava tapinhas no queixo. Ele calçou os chinelos: se não estivesse tão cansado, poderia odiá-la.” (“A mão no ombro”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-27" value="C"> C) “Acho que você nunca amou ninguém a não ser você mesmo, ela disse apertando as palmas das mãos contra os olhos. Amei você — quis dizer e não tive forças.” (“A sauna”). 
+                    <input type="radio" name="Q27" value="C"> C) “Acho que você nunca amou ninguém a não ser você mesmo, ela disse apertando as palmas das mãos contra os olhos. Amei você — quis dizer e não tive forças.” (“A sauna”). 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-27" value="D"> D) “Fiz minha cara inocente: na véspera, ele me advertira que eu podia ser uma moça de mãos feias, ‘Ainda não pensou nisso?’. Nunca tinha pensado antes, nunca me importei com as mãos, mas no instante em que ele fez a pergunta comecei a me importar.” (“Herbarium”).                     
+                    <input type="radio" name="Q27" value="D" id="correct-alt"> D) “Fiz minha cara inocente: na véspera, ele me advertira que eu podia ser uma moça de mãos feias, ‘Ainda não pensou nisso?’. Nunca tinha pensado antes, nunca me importei com as mãos, mas no instante em que ele fez a pergunta comecei a me importar.” (“Herbarium”).                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-27" value="E"> E) “E achei que seria a oportunidade de me livrar dele, a troca era vantajosa, mas calculei mal, logo nos primeiros encontros descobri que a traição faz apodrecer o amor. Na rua, no restaurante, no cinema, na cama e em toda parte, Eduarda, você esteve presente.” (“Noturno amarelo”). 
+                    <input type="radio" name="Q27" value="E"> E) “E achei que seria a oportunidade de me livrar dele, a troca era vantajosa, mas calculei mal, logo nos primeiros encontros descobri que a traição faz apodrecer o amor. Na rua, no restaurante, no cinema, na cama e em toda parte, Eduarda, você esteve presente.” (“Noturno amarelo”). 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -236,5 +237,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

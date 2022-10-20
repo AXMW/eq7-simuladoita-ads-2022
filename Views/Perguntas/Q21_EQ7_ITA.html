@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q21">
@@ -178,19 +179,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-21" value="A"> A) os verbos, advérbios e complementos representam uma situação perigosa para quem bebe pouco leite.
+                    <input type="radio" name="Q21" value="A"> A) os verbos, advérbios e complementos representam uma situação perigosa para quem bebe pouco leite.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-21" value="B"> B) a construção repetitiva dos versos sugere uma tensão entre as condições de vida, a repetição própria do trabalho moderno e uma moralidade social violenta. 
+                    <input type="radio" name="Q21" value="B" 
+                    id="correct-alt"> B) a construção repetitiva dos versos sugere uma tensão entre as condições de vida, a repetição própria do trabalho moderno e uma moralidade social violenta. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-21" value="C"> C) o estilo coloquial do poema está em perfeita consonância com os preceitos da poética romântica do autor. 
+                    <input type="radio" name="Q21" value="C"> C) o estilo coloquial do poema está em perfeita consonância com os preceitos da poética romântica do autor. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-21" value="D"> D) os versos tematizam a luta no campo entre grandes e pequenos pecuaristas dedicados à produção de laticínios no país.                     
+                    <input type="radio" name="Q21" value="D"> D) os versos tematizam a luta no campo entre grandes e pequenos pecuaristas dedicados à produção de laticínios no país.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-21" value="E"> E) a escassez de recursos linguísticos é uma metáfora da escassez de recursos na produção social de laticínios no país. 
+                    <input type="radio" name="Q21" value="E"> E) a escassez de recursos linguísticos é uma metáfora da escassez de recursos na produção social de laticínios no país. 
                 </span><br>
             
             
@@ -210,8 +212,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -244,5 +246,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

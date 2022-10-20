@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q37">
@@ -201,19 +202,20 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-37" value="A"> A) a interação entre indivíduos do grupo.
+                    <input type="radio" name="Q37" value="A"> A) a interação entre indivíduos do grupo.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-37" value="B"> B) formas de expressar experiências vividas em conceitos.
+                    <input type="radio" name="Q37" value="B"> B) formas de expressar experiências vividas em conceitos.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-37" value="C"> C) estabelecimento de relações entre ideias.
+                    <input type="radio" name="Q37" value="C"> C) estabelecimento de relações entre ideias.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-37" value="D"> D) suas práticas econômicas baseadas em escambo.                     
+                    <input type="radio" name="Q37" value="D" 
+                    id="correct-alt"> D) suas práticas econômicas baseadas em escambo.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-37" value="E"> E) a tradição oral de seus mitos e lendas. 
+                    <input type="radio" name="Q37" value="E"> E) a tradição oral de seus mitos e lendas. 
                 </span><br>
             
             
@@ -233,8 +235,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -267,5 +269,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

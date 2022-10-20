@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q47">
@@ -202,19 +203,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-47" value="A"> A) Nunca determina uma progressão aritmética.
+                    <input type="radio" name="Q47" value="A"> A) Nunca determina uma progressão aritmética.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-47" value="B"> B) Pode determinar uma progressão aritmética apenas se r = 0.
+                    <input type="radio" name="Q47" value="B"> B) Pode determinar uma progressão aritmética apenas se r = 0.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-47" value="C"> C) Pode determinar uma progressão aritmética apenas se r = 0 ou se r = √3/3.
+                    <input type="radio" name="Q47" value="C"> C) Pode determinar uma progressão aritmética apenas se r = 0 ou se r = √3/3.
                 </span><br>
                 <span>
-                    <input type="radio" name="question-47" value="D"> D) Pode determinar uma progressão aritmética para infinitos valores distintos de r.                  
+                    <input type="radio" name="Q47" value="D" id="correct-alt"> D) Pode determinar uma progressão aritmética para infinitos valores distintos de r.                  
                 </span><br>
                 <span>
-                    <input type="radio" name="question-47" value="E"> E) Determina uma progressão aritmética para todo x e r como no enunciado.
+                    <input type="radio" name="Q47" value="E"> E) Determina uma progressão aritmética para todo x e r como no enunciado.
                 </span><br>
             
             
@@ -234,8 +235,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -268,5 +269,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q17">
@@ -170,19 +171,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-17" value="A"> A) são o espelho da boa educação aristocrática que também caracteriza a dupla Edgarda e D. Florinda. 
+                    <input type="radio" name="Q17" value="A"> A) são o espelho da boa educação aristocrática que também caracteriza a dupla Edgarda e D. Florinda. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-17" value="B"> B) representam a dignidade de caráter do povo brasileiro, como Bogóloff e Juca Chaveco. 
+                    <input type="radio" name="Q17" value="B"> B) representam a dignidade de caráter do povo brasileiro, como Bogóloff e Juca Chaveco. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-17" value="C"> C) são personagens secundárias, cuja única função é auxiliar as personagens verdadeiramente centrais da narrativa. 
+                    <input type="radio" name="Q17" value="C"> C) são personagens secundárias, cuja única função é auxiliar as personagens verdadeiramente centrais da narrativa. 
                 </span><br>
                 <span>
-                    <input type="radio" name="question-17" value="D"> D) são protagonistas porque contribuem decisivamente para o sucesso das carreiras políticas de Bentes e Benevenuto.                     
+                    <input type="radio" name="Q17" value="D"> D) são protagonistas porque contribuem decisivamente para o sucesso das carreiras políticas de Bentes e Benevenuto.                     
                 </span><br>
                 <span>
-                    <input type="radio" name="question-17" value="E"> E) representam ao leitor que o oportunismo e a ação por mera conveniência estão presentes em todas as classes sociais brasileiras. 
+                    <input type="radio" name="Q17" value="E" id="correct-alt"> E) representam ao leitor que o oportunismo e a ação por mera conveniência estão presentes em todas as classes sociais brasileiras. 
                 </span><br>
             
             
@@ -202,8 +203,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="Finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="Corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -236,5 +237,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+		<script src="../../js/correct.js"></script>
   </body>
 </html>
