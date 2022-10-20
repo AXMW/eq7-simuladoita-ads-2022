@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q11">
@@ -187,19 +188,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-11" value="A"> A) 1,2 mm
+                    <input type="radio" name="Q11" value="A"> A) 1,2 mm
                 </span><br>
                 <span>
-                    <input type="radio" name="question-11" value="B"> B) 1,5 mm
+                    <input type="radio" name="Q11" value="B"> B) 1,5 mm
                 </span><br>
                 <span>
-                    <input type="radio" name="question-11" value="C"> C) 6,0 mm
+                    <input type="radio" name="Q11" value="C"> C) 6,0 mm
                 </span><br>
                 <span>
-                    <input type="radio" name="question-11" value="D"> D) 9,0 mm
+                    <input type="radio" name="Q11" value="D"> D) 9,0 mm
                 </span><br>
                 <span>
-                    <input type="radio" name="question-11" value="E"> E) Não é possível observar uma franja verde a partir desse arranjo experimental.
+                    <input type="radio" name="Q11" value="E" id="correct-alt"> E) Não é possível observar uma franja verde a partir desse arranjo experimental.
                 </span><br>
             
             
@@ -219,8 +220,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -253,5 +254,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

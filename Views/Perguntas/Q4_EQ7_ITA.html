@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q4">
@@ -189,7 +190,7 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-4" value="A"> A) mg(1&plus;
+                    <input type="radio" name="Q4" value="A" id="correct-alt"> A) mg(1&plus;
                     <div class="frac">
                         <span>2H</span>
                         <span class="symbol">/</span>
@@ -198,7 +199,7 @@
                     )
                 </span><br>
                 <span>
-                    <input type="radio" name="question-4" value="B"> B) mg(1&plus;
+                    <input type="radio" name="Q4" value="B"> B) mg(1&plus;
                     <div class="frac">
                         <span>H</span>
                         <span class="symbol">/</span>
@@ -207,10 +208,10 @@
                     )
                 </span><br>
                 <span>
-                    <input type="radio" name="question-4" value="C"> C) mg
+                    <input type="radio" name="Q4" value="C"> C) mg
                 </span><br>
                 <span>
-                    <input type="radio" name="question-4" value="D"> D) mg(1&minus;
+                    <input type="radio" name="Q4" value="D"> D) mg(1&minus;
                     <div class="frac">
                         <span>H</span>
                         <span class="symbol">/</span>
@@ -219,7 +220,7 @@
                     )
                 </span><br>
                 <span>
-                    <input type="radio" name="question-4" value="E"> E) mg(1&minus;
+                    <input type="radio" name="Q4" value="E"> E) mg(1&minus;
                     <div class="frac">
                         <span>2H</span>
                         <span class="symbol">/</span>
@@ -245,8 +246,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -279,5 +280,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

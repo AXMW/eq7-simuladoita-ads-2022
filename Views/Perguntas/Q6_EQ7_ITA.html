@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q6">
@@ -191,10 +192,10 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-6" value="A"> A) 0
+                    <input type="radio" name="Q6" value="A"> A) 0
                 </span><br>
                 <span>
-                    <input type="radio" name="question-6" value="B"> B) 
+                    <input type="radio" name="Q6" value="B"> B) 
                     <div class="frac">
                         <span>&rho;&upsilon;<sup>2</sup><sub>1</sub></span>
                         <span class="symbol">/</span>
@@ -202,7 +203,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-6" value="C"> C) 
+                    <input type="radio" name="Q6" value="C" id="correct-alt"> C) 
                     <div class="frac">
                         <span>&rho;&upsilon;<sup>2</sup><sub>1</sub></span>
                         <span class="symbol">/</span>
@@ -217,7 +218,7 @@
                     )
                 </span><br>
                 <span>
-                    <input type="radio" name="question-6" value="D"> D) 
+                    <input type="radio" name="Q6" value="D"> D) 
                     <div class="frac">
                         <span>&rho;&upsilon;<sup>2</sup><sub>1</sub></span>
                         <span class="symbol">/</span>
@@ -232,7 +233,7 @@
                     )
                 </span><br>
                 <span>
-                    <input type="radio" name="question-6" value="E"> E) 
+                    <input type="radio" name="Q6" value="E"> E) 
                     <div class="frac">
                         <span>&rho;&upsilon;<sup>2</sup><sub>1</sub></span>
                         <span class="symbol">/</span>
@@ -264,8 +265,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -298,5 +299,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

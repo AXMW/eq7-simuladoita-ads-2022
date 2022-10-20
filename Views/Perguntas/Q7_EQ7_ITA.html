@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/fracao.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q7">
@@ -192,10 +193,10 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-7" value="A"> A) 0
+                    <input type="radio" name="Q7" value="A"> A) 0
                 </span><br>
                 <span>
-                    <input type="radio" name="question-7" value="B"> B) 
+                    <input type="radio" name="Q7" value="B"> B) 
                     <div class="frac">
                         <span>2&pi;l</span>
                         <span class="symbol">/</span>
@@ -203,7 +204,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-7" value="C"> C) 
+                    <input type="radio" name="Q7" value="C"> C) 
                     <div class="frac">
                         <span>2&pi;l</span>
                         <span class="symbol">/</span>
@@ -211,7 +212,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-7" value="D"> D) 
+                    <input type="radio" name="Q7" value="D"> D) 
                     &radic;
                     <div class="frac">
                         <span>8</span>
@@ -226,7 +227,7 @@
                     </div>
                 </span><br>
                 <span>
-                    <input type="radio" name="question-7" value="E"> E) 
+                    <input type="radio" name="Q7" value="E" id="correct-alt"> E) 
                     &radic;
                     <div class="frac">
                         <span>8</span>
@@ -258,8 +259,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -292,5 +293,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="Text/Css" href="../../css/navigationMenu.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
     <link rel="stylesheet" type="Text/Css" href="../../css/question.css">
+    <link rel="stylesheet" type="Text/Css" href="../../css/correctionPopUp.css">
   </head>
 
   <body id="Q8">
@@ -194,19 +195,19 @@
           <div class="alternatives">
             
                 <span>
-                    <input type="radio" name="question-8" value="A"> A) 30 °C &le; T &le; 80 °C
+                    <input type="radio" name="Q8" value="A"> A) 30 °C &le; T &le; 80 °C
                 </span><br>
                 <span>
-                    <input type="radio" name="question-8" value="B"> B) 80 °C &le; T &le; 130 °C
+                    <input type="radio" name="Q8" value="B"> B) 80 °C &le; T &le; 130 °C
                 </span><br>
                 <span>
-                    <input type="radio" name="question-8" value="C"> C) 130 °C &le; T &le; 180 °C
+                    <input type="radio" name="Q8" value="C"> C) 130 °C &le; T &le; 180 °C
                 </span><br>
                 <span>
-                    <input type="radio" name="question-8" value="D"> D) 180 °C &le; T &le; 230 °C
+                    <input type="radio" name="Q8" value="D"> D) 180 °C &le; T &le; 230 °C
                 </span><br>
                 <span>
-                    <input type="radio" name="question-8" value="E"> E) 230 °C &le; T &le; 280 °C
+                    <input type="radio" name="Q8" value="E"> E) 230 °C &le; T &le; 280 °C
                 </span><br>
             
             
@@ -226,8 +227,8 @@
            
             <!--botões finalizar e corrigir-->
             <div class="buttons-end-correct">
-              <input type="button" class="button-end-correct" value="finalizar" onclick="saveresult()">
-              <input type="button" class="button-end-correct" value="corrigir" onclick="testanswer()">
+              <input type="button" class="button-end-correct" value="finalizar" onclick="saveResult()">
+              <input type="button" class="button-end-correct" value="corrigir" onclick="verifyAnswer()">
             </div>
            
           
@@ -260,5 +261,7 @@
       </div>
     </footer>
     <script src="../../js/menuAni.js"></script>
+    <script src="../../js/count.js"></script>
+    <script src="../../js/correct.js"></script>
   </body>
 </html>
