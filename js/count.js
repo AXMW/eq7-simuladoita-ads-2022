@@ -103,6 +103,7 @@ function saveResult() {
     }
 
     totalIncorrect[-1] -= 4
+    totalCorrect[-1] += 4
     var correctPercent = Math.round((correctAnswers.length / 70) * 100)
 
     let date = new Date()

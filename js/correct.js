@@ -120,7 +120,7 @@ function constructAlert() {
     document.write('<h1><b>!</b></h1>')
     document.write('<h3>Selecione uma alternativa</h3>')
     document.write('<span class="close" onClick="closePop()">&times</span>')
-    document.write('<p>Para conseguir corrigir uma questão é necessario selecionar alguma alternativa.</p>')
+    document.write('<p>Para conseguir corrigir uma questão, é necessário selecionar alguma alternativa.</p>')
     document.write('</div></div>')
 }
 
@@ -129,12 +129,12 @@ function constructIncorrect() {
     const correctText = document.querySelector(`input[value = ${document.querySelector('#correct-alt').value}]`).parentElement.innerText
     document.write('<div id="incorrect-pop-up" class="correct-pop-up">')
     document.write('<div id="incorrect" class="incorrect">')
-    document.write('<h1><b>X</b></h1>')
+    document.write('<h1><b>❌</b></h1>')
     document.write('<h3>Alternativa incorreta</h3>')
     document.write('<span class="close" onClick="closePop()">&times</span>')
     document.write('<p>A alternativa correta era "' + correctAlternative + '", ou seja:</p>')
     document.write('<p><b>"' + correctText + '"</b></p>')
-    document.write('<p>Melhore</p>')
+    document.write('<p></p>')
     document.write('</div></div>')
 }
 
@@ -143,12 +143,12 @@ function constructCorrect() {
     const correctText = document.querySelector(`input[value = ${document.querySelector('#correct-alt').value}]`).parentElement.innerText
     document.write('<div Id="correct-pop-up" class="correct-pop-up">')
     document.write('<div Id="correct" class="correct">')
-    document.write('<h1><b>V</b></h1>')
+    document.write('<h1><b>✅</b></h1>')
     document.write('<h3>Alternativa correta</h3>')
     document.write('<span type="button" class="close" onclick="closePop()">&times</span>')
     document.write('<p>A alternativa correta era a "' + correctAlternative + '", ou seja:</p>')
     document.write('<p><b>"' + correctText + '"</b></p>')
-    document.write('<p>Não fez mais que sua obrigação.</p>')
+    document.write('<p></p>')
     document.write('</div></div>')
 }
 
