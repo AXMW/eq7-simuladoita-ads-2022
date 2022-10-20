@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Max William Fonseca Ferreira">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado</title>
+  <link rel="stylesheet" type="Text/Css" href="../../css/layout.css">
+  <link rel="stylesheet" type="Text/Css" href="../../css/topnav.css">
+  <link rel="stylesheet" type="Text/Css" href="../../css/result.css">
+</head>
+
+<body>
+  <!--Cabeçalho da pagina-->
+  <header>
+    <div class="container">
+      <!--Lado esquerdo-->
+      <div class="logo">
+        <div class="ita-logo">
+          <a href="http://www.ita.br/" target="_blank">
+            <img src="../../Images/Geral/ita-logo.png" alt="ITA logo" width="200px">
+          </a>
+        </div>
+        <!--Lado direito-->
+      </div>
+      <div Class="menu-section">
+        <a href="../Principal/index.html">Inicio</a>
+        <a href="../Principal/about.html">Sobre</a>
+        <a href="../Principal/credits.html">Créditos</a>
+        <a href="https://www.vestibular.ita.br/" target="_blank">Vestibular ITA</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="corpo-pagina">
+      <p class="mensagem-final-simulado" id="final-simulado">
+        Parabéns você chegou ao fim do simulado!!!
+      </p>
+
+      
+      <div id="info-resultado" class="info-resultados">
+        <p class="orientacao" id="orientacao">
+          Confira abaixo a suas quantidades de acertos, erros, perguntas não respondidas e respondidas.
+        </p>
+        <p id="orientacao">
+          <b>Total de acertos</b>, <b>Total de erros</b>, <b>Total de perguntas não respondidas</b> e <b>Total de perguntas respondidas</b>
+        </p>
+      </div>
+      <p class="sub-mensagem-final-simulado" id="sub-t-final-simulado">
+        O seu resultado foi:
+      </p>
+      <div class="primeiro-dados-por-inteiro" id="primeiro-dados-por-inteiro">
+        <div class="inteiro-acertos">
+          <h3>Quantidade de acertos</h3>
+          <p id="acertos">X</p>
+        </div>
+        <div class="inteiro-erros">
+          <h3>Quantidade de erros</h3>
+          <p id="erros">X</p>
+        </div>
+      </div>
+      <div class="segundo-dados-por-inteiro" id="segundo-dados-por-inteiro">
+        <div class="inteiro-nao-respondidas">
+          <h3>Perguntas não respondidas</h3>
+          <p id="nao-respondidas">X</p>
+        </div>
+        <div class="inteiro-respondidas">
+          <h3>Perguntas respondidas</h3>
+          <p id="respondidas">X</p>
+        </div>
+      </div>
+      <div class="tempo-e-tempo-medio-simulado" id="tempo-e-tempo-medio-simulado">
+        <p id="tempo-de-simulado"></p>
+        <p class="retorno-acertos" id="retorno-acertos">X</p>
+      </div>
+      <div class="div-nota-individual" align = "center" id="nota-simulado">
+        <p>Nota final: <b id="nota-final">100</b><b>/70</b></p>
+      </div>
+      <div class="buttons-nav">
+        <input type="button" onclick="window.location.href='Q1_EQ7_ITA.html';" class="button-nav" value="Refazer simulado">
+        
+        <input type="button" onclick="window.location.href='../Principal/index.html'" class="button-nav" value="sair">
+      </div>
+    </div>
+  </main>
+  <!--rodapé do site-->
+  <footer>
+    <div class="footer">
+      <p>
+        <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="_blank">
+          Curso de Análise e Desenvolvimento de Sistemas (ADS) Fatec Carapicuíba
+        </a>
+      </p>
+      <div class="gov-links">
+        <a Target="_Blank" Href="http://www.fateccarapicuiba.edu.br">
+          <Img Src="../../Images/Geral/fatec-carapicuiba-logo.png" />
+        </a>
+        <a Target="_Blank" Href="https://www.saopaulo.sp.gov.br/">
+          <Img Src="../../Images/Geral/governo-do-estado-de-sp-logo.png" height="45px" width="80px" />
+        </a>
+        <a Target="_Blank" Href="https://www.cps.sp.gov.br/">
+          <Img Src="../../Images/Geral/cps-logo.png" height="45px" width="80px" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="../../js/result.js"></script>
+</body>
+
+</html>

@@ -49,12 +49,14 @@ addEventListener('change', () => {
             questionHistory.push(`${pageId}:${userChoice}`)
     }
 
+    questionHistory = questionHistory.join(" ")
+
     this.sessionStorage.setItem('userAnswers', questionHistory)
 
 })
 
 function saveResult() {
-    let correctAnswers = ["Q1:B", "Q2:D", "Q3:X", "Q4:A", "Q5:C", "Q6:C", "Q7:E", "Q8:X", "Q9:A", "Q10:B", "Q11:E", "Q12:A", "Q13:C", "Q14:A", "Q15:B", "Q16:C", "Q17:E", "Q18:A", "Q19:E", "Q20:E", "Q21:B", "Q22:B", "Q23:B", "Q24:X", "Q25:C", "Q26:A", "Q27:D", "Q28:D", "Q29:C", "Q30:E", "Q31:C", "Q32:A", "Q33:B", "Q34:C", "Q35:B", "Q36:C", "Q37:D", "Q38:B", "Q39:E", "Q40:A", "Q41:B", "Q42:E", "Q43:C", "Q44:A", "Q45:D", "Q46:E", "Q47:D", "Q48:C", "Q49:D", "Q50:A", "Q51:C", "Q52:A", "Q53:C", "Q54:C", "Q55:C", "Q56:D", "Q57:D", "Q58:B", "Q59:A", "Q60:X", "Q61:B", "Q62:D", "Q63:B", "Q64:A", "Q65:D", "Q66:E", "Q67:B", "Q68:B", "Q69:E", "Q70:A"]
+    let correctAnswers = ["Q1:B", "Q2:D", "Q4:A", "Q5:C", "Q6:C", "Q7:E", "Q9:A", "Q10:B", "Q11:E", "Q12:A", "Q13:C", "Q14:A", "Q15:B", "Q16:C", "Q17:E", "Q18:A", "Q19:E", "Q20:E", "Q21:B", "Q22:B", "Q23:B", "Q25:C", "Q26:A", "Q27:D", "Q28:D", "Q29:C", "Q30:E", "Q31:C", "Q32:A", "Q33:B", "Q34:C", "Q35:B", "Q36:C", "Q37:D", "Q38:B", "Q39:E", "Q40:A", "Q41:B", "Q42:E", "Q43:C", "Q44:A", "Q45:D", "Q46:E", "Q47:D", "Q48:C", "Q49:D", "Q50:A", "Q51:C", "Q52:A", "Q53:C", "Q54:C", "Q55:C", "Q56:D", "Q57:D", "Q58:B", "Q59:A", "Q61:B", "Q62:D", "Q63:B", "Q64:A", "Q65:D", "Q66:E", "Q67:B", "Q68:B", "Q69:E", "Q70:A"]
 
     let userAnswers = []
     let totalAnswered = []
@@ -62,9 +64,9 @@ function saveResult() {
     let totalIncorrect = []
 
     let timeDoing = 0
-    let totalWithoutAnswer = 70
+    let totalWithoutAnswer = 66
 
-    let finalScore = 0
+    let finalScore = 4
 
     if(sessionStorage.getItem('userAnswers')){
         userAnswers = sessionStorage.getItem('userAnswers').split(" ")
@@ -80,11 +82,17 @@ function saveResult() {
                 totalIncorrect.push(userAnswers[i])
         }
 
-        totalWithoutAnswer = 70 - totalAnswered.length
+        for(let i = 0; i < totalCorrect.length; i++) {
+            finalScore++;
+        }
+
+        totalWithoutAnswer = 66 - totalAnswered.length
     }
     else {
         totalAnswered = []
     }
+
+    
 
     if(sessionStorage.getItem("testStart")) {
         let testStart = sessionStorage.getItem("testStart")
@@ -94,6 +102,8 @@ function saveResult() {
         timeDoing = (testEnd - testStart) / 1000
     }
 
+    totalIncorrect[-1] -= 4
+    totalCorrect[-1] += 4
     var correctPercent = Math.round((correctAnswers.length / 70) * 100)
 
     let date = new Date()
@@ -126,10 +136,12 @@ function saveResult() {
         sessionStorage.setItem('userAnswers', '')
         sessionStorage.setItem('pagesCorrected', '')
 
-        sessionStorage.setItem('userAnswersStatic', userAnswers.join(' '))
+        sessionStorage.setItem('userAnswers', userAnswers.join(' '))
     }
+    sessionStorage.setItem('testStart', '')
 
     window.location.href = 'result.html'
+
 }
 
 function saveEvolutionData(valorASerArmazenado, chaveLocalStorage) {

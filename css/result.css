@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+
+body {
+    height: 100vh;
+    background-color: #15222c;
+    font-family: Noto Sans;
+    color: white;
+    text-rendering: optimizelegibility; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.corpo-pagina {
+    padding: 0 15%;
+    
+}
+
+.buttons-nav {
+    text-align: center;
+}
+
+.button-nav {
+    color: #15222c;
+    background: none;
+    margin: 0.5em;
+    padding: 1em 2em;  
+    border-radius: 5px;
+    border-color: #15222c;
+    background-color: rgb(206, 187, 19);
+    cursor: pointer;
+}
