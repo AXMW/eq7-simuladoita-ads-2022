@@ -19,6 +19,7 @@ if(localStorage.getItem('userCorrect')){
     dates = localStorage.getItem('dateTest').split(',')
 }
 
+totalCorrect = parseFloat(totalCorrect) + 4
 roundGrade(totalCorrect, totalIncorrect, totalWithoutAnswer, totalAnswered)
 
 if(timeDoing > 0) {
