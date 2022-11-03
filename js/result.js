@@ -80,7 +80,7 @@ document.getElementById('retorno-acertos').innerHTML = messageC
 document.getElementById('nota-final'). innerHTML = finalScore
 
 function roundGrade(corrects, incorrects, withoutAnswer, answereds) {
-    let correctPercent = Math.round((corrects / 70) * 100)
+    correctPercent = Math.round((corrects / 70) * 100)
     let incorrectPercent = Math.round((incorrects / 70) * 100)
     let withoutAnswerPercent = Math.round((withoutAnswer / 70) * 100)
     let answeredPercent = Math.round((answereds / 70) * 100)

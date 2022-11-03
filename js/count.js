@@ -80,6 +80,7 @@ function saveResult() {
 
             if(correctAnswers.indexOf(userAnswers[i]) < 0)
                 totalIncorrect.push(userAnswers[i])
+                console.log(totalIncorrect[i])
         }
 
         for(let i = 0; i < totalCorrect.length; i++) {
@@ -92,6 +93,7 @@ function saveResult() {
         totalAnswered = []
     }
 
+    totalIncorrect [-1] -= 1;
     
 
     if(sessionStorage.getItem("testStart")) {
