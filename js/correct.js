@@ -134,7 +134,8 @@ function constructIncorrect() {
     document.write('<span class="close" onClick="closePop()">&times</span>')
     document.write('<p>A alternativa correta era "' + correctAlternative + '", ou seja:</p>')
     document.write('<p><b>"' + correctText + '"</b></p>')
-    document.write('<p></p>')
+    document.write('<div id="graphI"></div>')
+    printGraphI()
     document.write('</div></div>')
 }
 
@@ -148,7 +149,8 @@ function constructCorrect() {
     document.write('<span type="button" class="close" onclick="closePop()">&times</span>')
     document.write('<p>A alternativa correta era a "' + correctAlternative + '", ou seja:</p>')
     document.write('<p><b>"' + correctText + '"</b></p>')
-    document.write('<p></p>')
+    document.write('<div id="graph"></div>')
+    printGraph()
     document.write('</div></div>')
 }
 
@@ -171,6 +173,8 @@ function openIncorrect() {
     container.style.display = 'flex'
     const incorrect = document.getElementById('incorrect')
     incorrect.style.display = 'block'
+    const graph = document.getElementById('graph')
+    graph.style.display = 'block'
 }
 
 function openCorrect() {
@@ -178,6 +182,8 @@ function openCorrect() {
     container.style.display = 'flex'
     const correct = document.getElementById('correct')
     correct.style.display = 'block'
+    const graph = document.getElementById('graph')
+    graph.style.display = 'block'
 }
 
 function closePop() {
