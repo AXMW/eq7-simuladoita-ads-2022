@@ -22,6 +22,19 @@ if(localStorage.getItem('userCorrect')){
 totalCorrect = parseFloat(totalCorrect) + 4
 roundGrade(totalCorrect, totalIncorrect, totalWithoutAnswer, totalAnswered)
 
+graphics();
+function graphics() {
+    var incorrectGraph = totalIncorrect - totalWithoutAnswer
+    incorrectGraph = incorrectGraph / 70
+    var correctGraph = totalCorrect / 70
+    var withoutAnswerGraph = totalWithoutAnswer / 70
+    var datay = [incorrectGraph, correctGraph, withoutAnswerGraph]
+    var datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`, `Sem resposta: ${totalWithoutAnswer}`]  
+    var data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true}];
+    var layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false}
+    Plotly.newPlot('graph', data, layout);
+}
+
 if(timeDoing > 0) {
     seconds = timeDoing % 60
     averageByQuestion = Math.round(timeDoing / totalAnswered)
@@ -64,16 +77,7 @@ if(totalAnswered == 0){
     document.getElementById('nota-simulado').style.display = 'none'
 }
 else{
-    if(correctPercent == 0)
-        messageC = 'Infelizmente você tirou a menor nota possivel (' + correctPercent + '%)'
-    else if(correctPercent < 25)
-        messageC = 'Infelizmente você acertou ' + correctPercent + '%'
-    else if(correctPercent < 50)
-        messageC = 'Você está bem proximo de atingir 50%, você acertou: ' + correctPercent + '%'
-    else if(correctPercent < 75)
-        messageC = 'Parabéns você acertou acima de 50%, você acertou: ' + correctPercent + '%'
-    else
-        messageC = 'Parabéns a sua nota está acima de 75%, você acertou: ' + correctPercent + '%'
+    messageC = 'Você acertou: ' + correctPercent + '%'
 }
 
 document.getElementById('retorno-acertos').innerHTML = messageC
