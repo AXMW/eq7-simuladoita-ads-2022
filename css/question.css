@@ -41,6 +41,7 @@
 }
 
 .navigation-reducted button {
+    font-size: 14px;
     color: white;
     border-color: white;
     background: none;
@@ -61,6 +62,7 @@
 }
 
 .button-end-correct {
+    font-size: 14px;
     color: white;
     border-color: white;
     background: none;

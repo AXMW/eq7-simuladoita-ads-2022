@@ -19,6 +19,7 @@ body {
 }
 
 .button-nav {
+    font-size: 16px;
     color: #15222c;
     background: none;
     margin: 0.5em;
