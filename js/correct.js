@@ -123,7 +123,8 @@ function constructAnulatedQuestion() {
     document.write('<h1><b>!!!</b></h1>')
     document.write('<h3>Questão anulada</h3>')
     document.write('<span class="close" onClick="closePop()">&times</span>')
-    document.write('<p>Essa questão foi anulada no vestibular pois ela continha um erro de digitação</p>')
+    document.write('<p>Essa questão foi anulada no vestibular pois ela continha um erro de digitação.</p>')
+    document.write('<p>Ela vai ser contabilizada como uma questão correta seguindo o que aconteceu no vestibular.</p>')
     document.write('</div></div>')
 }
 
