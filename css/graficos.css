@@ -7,6 +7,11 @@ lateral {
     background-color: lightgray;
   }
 
+.introducao-graficos{
+    font-family: Noto Sans;
+    padding: 4%;
+}
+
 .footer {
     background-color: #161b22;
 
