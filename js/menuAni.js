@@ -1,20 +1,20 @@
 function openSubject(evt, subjectName) {
-    // Declare all variables
+    //declarando as variaveis pro menu de cima
     var i, tabcontent, tablinks;
   
-    // Get all elements with class="tabcontent" and hide them
+    // pega os elementos cm o nome tabcontent e esconde
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Get all elements with class="tablinks" and remove the class "active"
+    // pega todos o tablink e tira o active
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // mostra a aba ativa q a pessoa clicou
     document.getElementById(subjectName).style.display = "block";
     evt.currentTarget.className += " active";
   }

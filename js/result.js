@@ -1,3 +1,4 @@
+//variavel pra pagina result.html
 var totalCorrect = 0
 var totalIncorrect = 0
 var totalAnswered = 0
@@ -8,6 +9,7 @@ var timeDoing = 0
 var messageC = ''
 var finalScore = 0
 
+//verifica se existe algum simulado ja respondido, se sim pega os valores e coloca nas variaveis de cima
 if(localStorage.getItem('userCorrect')){
     totalCorrect = storageValue('userCorrect')
     totalIncorrect = storageValue('userIncorrect')
@@ -19,22 +21,26 @@ if(localStorage.getItem('userCorrect')){
     dates = localStorage.getItem('dateTest').split(',')
 }
 
+//adiciona 4 nas respostas corretas, ja q isso aconteceu no vestibular
 totalCorrect = parseFloat(totalCorrect) + 4
+//faz as porcentagens das respostas
 roundGrade(totalCorrect, totalIncorrect, totalWithoutAnswer, totalAnswered)
 
 graphics();
+//grafico de quanto a pessoa acertou errou e n respondeu
 function graphics() {
-    var incorrectGraph = totalIncorrect - totalWithoutAnswer
+    let incorrectGraph = totalIncorrect - totalWithoutAnswer
     incorrectGraph = incorrectGraph / 70
-    var correctGraph = totalCorrect / 70
-    var withoutAnswerGraph = totalWithoutAnswer / 70
-    var datay = [incorrectGraph, correctGraph, withoutAnswerGraph]
-    var datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`, `Sem resposta: ${totalWithoutAnswer}`]  
-    var data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true}];
-    var layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false}
+    let correctGraph = totalCorrect / 70
+    let withoutAnswerGraph = totalWithoutAnswer / 70
+    let datay = [incorrectGraph, correctGraph, withoutAnswerGraph]
+    let datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`, `Sem resposta: ${totalWithoutAnswer}`]  
+    let data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true}];
+    let layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false}
     Plotly.newPlot('graph', data, layout);
 }
 
+//tempo da pessoa respondendo o simulado e tempo medio por questão
 if(timeDoing > 0) {
     seconds = timeDoing % 60
     averageByQuestion = Math.round(timeDoing / totalAnswered)
@@ -67,6 +73,7 @@ if(this.localStorage.getItem('dateTest'))
     this.document.getElementById('')
 }*/
 
+// se a pessoa n respondeu nenhuma questão vai falar q ela n fez
 if(totalAnswered == 0){
     messageC = 'Você não respondeu a nenhuma pergunta. Clique em <b>REFAZER SIMULADO</b>'
     document.getElementById('final-simulado').innerHTML = 'Por favor, selecione ao menos uma alternativa'
@@ -83,6 +90,7 @@ else{
 document.getElementById('retorno-acertos').innerHTML = messageC
 document.getElementById('nota-final'). innerHTML = finalScore
 
+// a função pra fazer as porcentagens
 function roundGrade(corrects, incorrects, withoutAnswer, answereds) {
     correctPercent = Math.round((corrects / 70) * 100)
     let incorrectPercent = Math.round((incorrects / 70) * 100)
@@ -95,6 +103,7 @@ function roundGrade(corrects, incorrects, withoutAnswer, answereds) {
     document.getElementById('respondidas').innerHTML = `${answereds}/70 <b>(${answeredPercent}%)</b>`
 }
 
+//guarda o valor no localStorage
 function storageValue(key) {
     let storageValue = localStorage.getItem(key).split(',')
     return storageValue[storageValue.length-1]

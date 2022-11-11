@@ -1,3 +1,4 @@
+//todas as questões e estatisticas 
 var allQuestions = [
 	[1,'B',[0.39,0.18,0.22,0.06,0.15]],
 	[2,'D',[0.61,0.06,0.21,0.07,0.05]],
@@ -71,6 +72,7 @@ var allQuestions = [
     [70,' A',[0.16,0.18,0.25,0.27,0.14]],
 ]
 
+//função pra desenhar as respostas pegando os dados e deixando eles organizados pro plotly
 function drawResponses(question, answer, valuesAnswers) {
 	var xArray = ["A", "B", "C", "D", "E"];
 	var yArray = valuesAnswers;
@@ -85,11 +87,13 @@ function drawResponses(question, answer, valuesAnswers) {
 	document.write('<table><tr><td>');
 	document.write('<div id="' + divQuestion + '" style="width:70%;max-width:400px"></div>');
 	document.write('</td><td>');
-  document.write('<lateral><h2><center>Resposta: '+answer+'</center></h2></lateral>');
+  	document.write('<lateral><h2><center>Resposta: '+answer+'</center></h2></lateral>');
 	document.write('</td></tr></table>');
 	
+	//função do plotly pra criar os graficos
 	Plotly.newPlot(divQuestion, data, layout); 
 }
+//for pra ir desenhando de grafico em grafico
 for (let i = 0; i < allQuestions.length; i++) {
   drawResponses(allQuestions[i][0], allQuestions[i][1], allQuestions[i][2]);
 }

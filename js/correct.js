@@ -1,3 +1,4 @@
+//declaração de variaveis
 var correctAlternative = ''
 var altText = ''
 var correctedPags = ''
@@ -7,22 +8,27 @@ var verify
 
 verifyAnulated()
 
+//qnd a pag é carregada verifica se ela ja foi corrigida
 window.addEventListener('load', () => {
     verifyCorrectedPage()
        
 })
 
+//função para quando o usuario clicar em corrigir
 function verifyAnswer() {
     if(verify == 1){
+        //popup dnv do anulada pq o usuario pode ser teimoso e clicar dnv em corrigir
         openAnulatedQuestion()
         disableInputRadio()
     }
     else{
         verifyCorrectedPage()
+        //vefica se o usuario n respondeu nd
         if(selectedAlternative() == 'none'){
             openAlert()
         }
         else{
+            //verificação se esta correta ou n
             selectedAltContent(selectedAlternative())
 
             if(selectedAlternative() === correctAlternative){
@@ -35,7 +41,7 @@ function verifyAnswer() {
             disableInputRadio()
 
             let cycles = 0
-
+            //escrevendo as pag corrigidas em uma variavel
             for(correctedPags of correctedPags.split(" ")){
                 if(correctedPags == pageId){
                     cycles++
@@ -43,6 +49,7 @@ function verifyAnswer() {
             }
 
             if(cycles == 0){
+                //armazenando as pags corrigidas
                 correctedPags = correctedPags.split(" ")
                 correctedPags.push(pageId)
                 correctedPags = correctedPags.join(" ")
@@ -53,11 +60,13 @@ function verifyAnswer() {
     
 }
 
+//função para desativar os botões radio da pagina da questão
 function disableInputRadio() {
     for(item of document.querySelectorAll(`Input[Name=${pageId}]`))
     item.style.pointerEvents = 'none'
 }
 
+//verifica se a pagina ja foi corrigida
 function verifyCorrectedPage() {
     if(sessionStorage.getItem('correctedPages')){
         correctedPags = sessionStorage.getItem('correctedPages')
@@ -71,6 +80,7 @@ function verifyCorrectedPage() {
     }
 }
 
+//retorna o valor da alternativa selecionada, se ele n seleciona retorna none
 function selectedAlternative() {
     for(item of document.querySelectorAll(`Input[Name=${pageId}]`)){
         if(item.checked)
@@ -79,6 +89,7 @@ function selectedAlternative() {
     return 'none'
 }
 
+//retorna o texto da alternativa certa
 function selectedAltContent(alternative) {
     altText = document.querySelector(`Input[value=${alternative}]`).parentElement.innerText
 
@@ -86,6 +97,7 @@ function selectedAltContent(alternative) {
     return altText
 }
 
+//a função vai verificar se a questão foi anulada no vestibular, vai buscar se a alternativa correta existe, se n existir foi anulada
 function verifyAnulated(){
     let anulada = 0
     anulada = document.getElementById('correct-alt')
@@ -104,6 +116,7 @@ function verifyAnulated(){
     }
 }
 
+//as proximas 4 construi os popup
 function constructAnulatedQuestion() {
     document.write('<div id="anulated-pop-up" class="correct-pop-up">')
     document.write('<div id="anulated" class="anulated">')
@@ -154,6 +167,7 @@ function constructCorrect() {
     document.write('</div></div>')
 }
 
+//as proximas 4 são as aberturas dos popup
 function openAnulatedQuestion() {
     const container = document.getElementById('anulated-pop-up')
     container.style.display = 'flex'
@@ -173,7 +187,7 @@ function openIncorrect() {
     container.style.display = 'flex'
     const incorrect = document.getElementById('incorrect')
     incorrect.style.display = 'block'
-    const graph = document.getElementById('graph')
+    const graph = document.getElementById('graphI')
     graph.style.display = 'block'
 }
 
@@ -186,6 +200,7 @@ function openCorrect() {
     graph.style.display = 'block'
 }
 
+//essa função é pra fechar o popup
 function closePop() {
     if(verify == 1){
         const anulatedPopUp = document.getElementById('anulated-pop-up')

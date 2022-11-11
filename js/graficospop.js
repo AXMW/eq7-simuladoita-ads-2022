@@ -1,4 +1,5 @@
-var allQuestions = [
+//constante de todos os dados das questões
+const ALLQUESTIONS = [
 	['Q' + 1,'B',[0.39,0.18,0.22,0.06,0.15]],
 	['Q' + 2,'D',[0.61,0.06,0.21,0.07,0.05]],
 	['Q' + 4,'A',[0.09,0.52,0.06,0.24,0.09]],
@@ -66,6 +67,7 @@ var allQuestions = [
     ['Q' + 69,'E',[0.09,0.52,0.06,0.24,0.09]],
     ['Q' + 70,' A',[0.16,0.18,0.25,0.27,0.14]]
 ]
+//função pra criar os graficos no popup de correto e incorreto
 function drawResponses(valuesAnswers) {
 	var xArray = ["A", "B", "C", "D", "E"];
 	var yArray = valuesAnswers;
@@ -75,15 +77,6 @@ function drawResponses(valuesAnswers) {
     var layout = {height: 335, width: 470, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false};
     
     Plotly.newPlot('graph', data, layout);
-}
-function printGraph(){
-    var verificador = document.querySelector('body').id
-    for (let i = 0; i < allQuestions.length; i++) {
-        if(allQuestions[i][0] == verificador){
-            drawResponses(allQuestions[i][2]);
-            break;
-        }   
-    }
 }
 
 function drawResponsesI(valuesAnswers) {
@@ -97,11 +90,22 @@ function drawResponsesI(valuesAnswers) {
     Plotly.newPlot('graphI', data, layout);
 }
 
+//funcção pra printar o grafico correto e incorreto
+function printGraph(){
+    var verificador = document.querySelector('body').id
+    for (let i = 0; i < ALLQUESTIONS.length; i++) {
+        if(ALLQUESTIONS[i][0] == verificador){
+            drawResponses(ALLQUESTIONS[i][2]);
+            break;
+        }   
+    }
+}
+
 function printGraphI(){
     var verificador = document.querySelector('body').id
-    for (let i = 0; i < allQuestions.length; i++) {
-        if(allQuestions[i][0] == verificador){
-            drawResponsesI(allQuestions[i][2]);
+    for (let i = 0; i < ALLQUESTIONS.length; i++) {
+        if(ALLQUESTIONS[i][0] == verificador){
+            drawResponsesI(ALLQUESTIONS[i][2]);
             break;
         }   
     }
