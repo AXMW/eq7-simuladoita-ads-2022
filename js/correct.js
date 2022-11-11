@@ -123,7 +123,8 @@ function constructAnulatedQuestion() {
     document.write('<h1><b>!!!</b></h1>')
     document.write('<h3>Questão anulada</h3>')
     document.write('<span class="close" onClick="closePop()">&times</span>')
-    document.write('<p>Essa questão foi anulada no vestibular pois ela continha um erro de digitação</p>')
+    document.write('<p>Essa questão foi anulada no vestibular pois ela continha um erro de digitação.</p>')
+    document.write('<p>Segundo as normas de aplicação das provas do ITA, consta que "As questões 03, 08, 24 e 60 foram anuladas devido a erros de digitação. Para efeito de pontuação, estas questões foram consideradas corretas para todos os candidatos". Portanto, essa questão será contabilizada como acerto, de forma a respeitar a aplicação do simulado da prova do ITA.</p>')
     document.write('</div></div>')
 }
 
