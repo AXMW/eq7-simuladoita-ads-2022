@@ -77,9 +77,9 @@ function drawResponses(question, answer, valuesAnswers) {
 	var xArray = ["A", "B", "C", "D", "E"];
 	var yArray = valuesAnswers;
 
-	var layout = {title:"<b>Porcentagem de acertos e erros da questão " + question + "</b>", plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}};
+	var layout = {title:"<b>Porcentagem de acertos e erros da questão " + question + "</b>", plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"} , showlegend: false};
 
-	var data = [{labels:xArray, values:yArray, type:"pie"}];
+	var data = [{labels:xArray, values:yArray, type:"pie", textinfo: "label+percent", textposition: "outside", automargin: true}];
 	//var data = [{x:xArray, y:yArray, type:"bar"}];
 
 	var divQuestion = "Question" + question;
