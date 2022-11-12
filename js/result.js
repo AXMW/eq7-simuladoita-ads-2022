@@ -33,15 +33,23 @@ function graphics() {
     incorrectGraph = incorrectGraph / 70
     let correctGraph = totalCorrect / 70
     let withoutAnswerGraph = totalWithoutAnswer / 70
-    let datay = [incorrectGraph, correctGraph, withoutAnswerGraph]
-    let datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`, `Sem resposta: ${totalWithoutAnswer}`]  
+    let answeredGraph = totalAnswered / 70
+    let datay = [incorrectGraph, correctGraph/*, withoutAnswerGraph*/]
+    let datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`/*, `Sem resposta: ${totalWithoutAnswer}`*/]  
     let data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true, "marker": { "colors" : [
         "rgba(200, 0, 0, 0.87);",
         "rgb(0, 184, 0)",
-        "rgb(105, 105, 105)"
+        /*"rgb(105, 105, 105)"*/
     ]}}];
+    let datay2 = [withoutAnswerGraph, answeredGraph]
+    let datax2 = [`Sem resposta: ${totalWithoutAnswer}`, `Respondida: ${totalAnswered}`]
+    let data2 = [{labels: datax2, values: datay2, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true, "marker": { "colors" : [
+        "rgb(105, 105, 105)",
+        "rgb(48, 51, 228)"
+    ]}}]
     let layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}}
     Plotly.newPlot('graph', data, layout);
+    Plotly.newPlot('graph2', data2, layout);
 }
 
 //tempo da pessoa respondendo o simulado e tempo medio por questão
