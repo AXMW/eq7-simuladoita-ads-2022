@@ -87,7 +87,7 @@ function drawResponses(question, answer, valuesAnswers) {
 	document.write('<table><tr><td>');
 	document.write('<div id="' + divQuestion + '" style="width:70%;max-width:400px"></div>');
 	document.write('</td><td>');
-  	document.write('<lateral><h2><center>Resposta: '+answer+'</center></h2></lateral>');
+  	document.write('<lateral><h2><center>Resposta correta: '+answer+'</center></h2></lateral>');
 	document.write('</td></tr></table>');
 	
 	//função do plotly pra criar os graficos
@@ -114,3 +114,22 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function openNav() {
+	document.getElementById("sideNav").style.width = "250px";
+  }
+  
+  function closeNav() {
+	document.getElementById("sideNav").style.width = "0";
+  }
+  window.onscroll = function() {myFunction()};
+  
+  var nav = document.getElementById("rightnav");
+  var sticky = nav.offsetTop;
+  function myFunction() {
+	if (window.pageYOffset > sticky) {
+	  nav.classList.add("sticky");
+	} else {
+	  nav.classList.remove("sticky");
+	}
+  }
