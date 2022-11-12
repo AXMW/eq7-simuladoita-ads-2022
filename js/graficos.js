@@ -88,7 +88,9 @@ function drawResponses(question, answer, valuesAnswers) {
 	document.write('<div id="' + divQuestion + '" style="width:70%;max-width:400px"></div>');
 	document.write('</td><td>');
   	document.write('<lateral><h2><center>Resposta correta: '+answer+'</center></h2></lateral>');
+
 	document.write('</td></tr></table>');
+	document.write('<i><p>Fonte: Os autores.</p></i>');
 	
 	//função do plotly pra criar os graficos
 	Plotly.newPlot(divQuestion, data, layout); 
