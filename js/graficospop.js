@@ -74,7 +74,7 @@ function drawResponses(valuesAnswers) {
 
 
     var data = [{labels:xArray, values:yArray, type:"pie",textinfo: "label+percent", textposition: "outside", automargin: true}];
-    var layout = {height: 335, width: 470, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false};
+    var layout = {height: 335, width: 470, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}};
     
     Plotly.newPlot('graph', data, layout);
 }
@@ -85,7 +85,7 @@ function drawResponsesI(valuesAnswers) {
 
 
     var data = [{labels:xArray, values:yArray, type:"pie",textinfo: "label+percent", textposition: "outside", automargin: true}];
-    var layout = {height : 335, width: 470, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false};
+    var layout = {height : 335, width: 470, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}};
     
     Plotly.newPlot('graphI', data, layout);
 }
