@@ -38,7 +38,7 @@ function graphics() {
     let data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true, "marker": { "colors" : [
         "rgb(200, 0, 0)",
         "rgb(0, 200, 0)",
-        "rgb(72, 74, 235)"
+        "rgb(190, 190, 190)"
     ]}}];
     let layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}}
     Plotly.newPlot('graph', data, layout);
