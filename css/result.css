@@ -10,8 +10,8 @@ body {
 }
 
 .corpo-pagina {
+    text-align: center;
     padding: 0 15%;
-    
 }
 
 .buttons-nav {
@@ -28,4 +28,50 @@ body {
     border-color: #15222c;
     background-color: rgb(206, 187, 19);
     cursor: pointer;
+}
+
+.primeiro-dados-por-inteiro div, .segundo-dados-por-inteiro div{
+    border-width: 1%;
+    border-style: solid; 
+    border-color: rgba(66, 66, 66, 0.6);
+    height: 50%;
+    width: 60%;
+    max-width: 400px;
+    max-height: 200px;
+    align-items: center;
+    margin-top: 2.5%;
+    display: inline-table;
+}
+
+.primeiro-dados-por-inteiro p, .segundo-dados-por-inteiro p{
+    margin: 2.5%;
+}
+
+.inteiro-acertos h4, .inteiro-erros h4, 
+.inteiro-nao-respondidas h4, .inteiro-respondidas h4{
+    font-size: 2rem;
+}
+
+.inteiro-acertos, .inteiro-nao-respondidas{
+    margin-right: 15%;
+}
+
+.inteiro-acertos h4{
+    background-color: rgba(0, 255, 0, 0.6);
+}
+
+.inteiro-erros h4{
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.inteiro-nao-respondidas h4{
+    background-color: rgba(180, 180, 180, 0.6);
+}
+
+.inteiro-respondidas h4{
+    background-color: rgba(255, 155, 55, 0.6);
+}
+
+.respondidas-e-naorespondidas{
+    margin-bottom: 4%;
 }

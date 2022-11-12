@@ -35,8 +35,12 @@ function graphics() {
     let withoutAnswerGraph = totalWithoutAnswer / 70
     let datay = [incorrectGraph, correctGraph, withoutAnswerGraph]
     let datax = [`Incorretas: ${totalIncorrect - totalWithoutAnswer}`, `Corretas: ${totalCorrect}`, `Sem resposta: ${totalWithoutAnswer}`]  
-    let data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true}];
-    let layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false}
+    let data = [{labels: datax, values: datay, type: "pie", textinfo: "label+percent", textposition: "outside", automargin: true, "marker": { "colors" : [
+        "rgb(200, 0, 0)",
+        "rgb(0, 200, 0)",
+        "rgb(72, 74, 235)"
+    ]}}];
+    let layout = {height: 400, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff"}}
     Plotly.newPlot('graph', data, layout);
 }
 
