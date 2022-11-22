@@ -2,9 +2,9 @@
 
 body {
     height: 100vh;
-    background-color: #15222c;
+    background-color: #e8ecf2;
     font-family: Noto Sans;
-    color: white;
+    color: black;
     text-rendering: optimizelegibility; 
     -webkit-font-smoothing: antialiased;
 }
@@ -20,14 +20,26 @@ body {
 
 .button-nav {
     font-size: 16px;
-    color: #15222c;
-    background: none;
+    color: #73787d;
+    background: #e8ecf2;
     margin: 0.5em;
     padding: 1em 2em;  
-    border-radius: 5px;
-    border-color: #15222c;
-    background-color: rgb(241, 219, 15);
+    border-radius: 9999px;
+    border: none;
     cursor: pointer;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
+    5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-nav:hover {
+    transition: all;
+    transition-duration: 250ms;
+    box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6),
+    1px 1px 5px rgba(0, 0, 0, 0.3),
+    inset -2px -2px 5px rgba(255, 255, 255, 1),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: black;
 }
 
 .primeiro-dados-por-inteiro div, .segundo-dados-por-inteiro div{

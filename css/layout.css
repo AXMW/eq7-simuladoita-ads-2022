@@ -9,24 +9,24 @@
 
 body {
     height: 100vh;
-    background-color: #15222c;
+    background-color: #e8ecf2;
     font-family: Noto Sans;
-    color: white;
+    color: black;
     text-rendering: optimizelegibility; 
     -webkit-font-smoothing: antialiased;
 }
 
 body a {
-    color: white;
+    color: black;
 }
 
 .footer {
-    background-color: #161b22;
+    background-color: #b1cbe6;
 
 }
 
 .footer a {
-    color: white;
+    color: black;
 
 }
 .footer p {
