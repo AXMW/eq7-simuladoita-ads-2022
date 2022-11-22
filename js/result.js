@@ -47,8 +47,8 @@ function graphics() {
         "rgb(105, 105, 105)",
         "rgb(48, 51, 228)"
     ]}}]
-    let layout = {height: 500, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff", size: 16}}
-    let layout2 = {height: 500, width: 430, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#ffffff", size: 16}}
+    let layout = {height: 500, width: 400, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#000000", size: 16}}
+    let layout2 = {height: 500, width: 430, margin: {"t": 0, "b": 0, "l": 0, "r": 0}, showlegend: false, plot_bgcolor: "rgba(0,0,0,0)", paper_bgcolor: "rgba(0,0,0,0)", font: { family: "Noto Sans", color: "#000000", size: 16}}
     Plotly.newPlot('graph', data, layout);
     Plotly.newPlot('graph2', data2, layout2);
 }
