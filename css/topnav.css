@@ -1,15 +1,16 @@
 /* Add a black background color to the top navigation */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 .container {
-  //padding: 0 10%;
+  /*padding: 0 10%;*/
   font-family: Noto Sans;
   background-color: #b1cbe6;
+  background-image: linear-gradient(to bottom right, #527fc4,#e8ecf2);
   overflow: hidden;
 }
   
   /* Style the links inside the navigation bar */
 .container a {
-  //float: left;
+  /*float: left;*/
   color: black;
   text-align: center;
   
@@ -26,7 +27,7 @@
 .menu-section {
   padding: 0 10%;
   display: flex;  
-  //margin-top: 30px;
+  /*margin-top: 30px;*/
   height: 76px;
   float: right;
 }

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
+  background-image: linear-gradient(to bottom right, #9cb7df,#e8ecf2);
   font-family: Noto Sans;
   overflow: hidden;
   border: none;
@@ -16,7 +16,7 @@
   font-size: 16px;
   font-family: Noto Sans;
   color: black;
-  background-color: inherit;
+  background-color: rgba(0,0,0, 0);
   border: none;
   outline: none;
   cursor: pointer;
@@ -25,7 +25,7 @@
 }
     
 .tab button:hover {
-  background-color: #afbac5; 
+  background-color: #b8d9fd; 
 }
     
 /*.tab button.active {
